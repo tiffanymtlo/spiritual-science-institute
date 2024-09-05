@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 10px;
+}
+
+.logo img {
+  width: 60px;
+  margin: 0 10px;
+}
+
+.logo h1 {
+  flex: 0 0 auto;
+  margin: 0;
+  font-weight: 700;
+  padding: 10px 0;
+  /* Below is for the gradient effect of the logo */
+  background: linear-gradient(45deg, #e66465, #9198e5);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  /* End of gradient effect */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 14px 20px;
+  color: #333;
+}
+
+.hero {
+  background-image: url('/public/chakra.jpeg');
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,40 @@
+.offerings {
+  padding: 50px;
+  background-color: #BFBFBF;
+  text-align: center;
+}
+
+.offerings h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.offerings p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product {
+  text-align: center;
+  max-width: 300px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 1.2rem;
+  color: #777;
+}

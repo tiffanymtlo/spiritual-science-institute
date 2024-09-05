@@ -1,0 +1,38 @@
+.explanation-section {
+  font-family: "Red Hat Display", sans-serif;
+  color: #7F8291;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.explanation-section h2 {
+  background: -webkit-linear-gradient(#BE3B27, #4B332F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.explanation-section p {
+  font-size: 1.2rem;
+}
+
+.explanation-paragraph {
+  width: 28rem;
+}
+
+.explanation-display div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explanation-display img {
+  width: 75px;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.oracle-video {
+  width: 400px;
+}

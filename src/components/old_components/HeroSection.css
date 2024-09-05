@@ -1,0 +1,55 @@
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  background-image: url(https://ichingspiritual.com/wp-content/uploads/2024/07/success-chart3-47922.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.text-container {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+}
+
+.text-container h1 {
+  font-size: 3.5rem;
+  background: -webkit-linear-gradient(#BE3B27, #4B332F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.text-container p {
+  font-family: "Comfortaa", sans-serif;
+  color: #BE3B27;
+  font-size: 1.5rem;
+  text-align: left;
+  text-shadow: #4B332F 2px 2px 5px;
+}
+
+.how-to-use-btn {
+  background-image: linear-gradient(45deg, #BE3B27, #4B332F);
+  flex: 0 0 3rem;
+  width: 13rem;
+  margin-top: 5rem;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.img-container {
+  flex: 1 1 40%;
+}
+
+.img-container img {
+  width: 9rem;
+  margin: 0.8rem;
+}
