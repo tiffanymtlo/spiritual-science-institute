@@ -24,6 +24,10 @@ import Header from './components/Header';
 import AboutUs from './components/AboutUs';
 import Offerings from './components/Products';
 import Services from './components/Services';
+import Classes from './components/Classes';
+import Testimonials from './components/Testimonials';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -33,6 +37,10 @@ function App() {
       <AboutUs />
       <Offerings />
       <Services />
+      <Classes />
+      <Testimonials />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

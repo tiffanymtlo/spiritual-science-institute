@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={process.env.PUBLIC_URL + '/name_card_crop.png'} alt="SpiritualScience Institute" />
+        <img src={process.env.PUBLIC_URL + '/name_card_crop.png'} alt="SpiritualScience Institute logo" />
         <h1>SpiritualScience Institute</h1>
       </div>
       <nav className="navbar">
