@@ -22,7 +22,7 @@
 .products {
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .product {
@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s ease;
 }
 
 .product img {
@@ -45,6 +46,14 @@
   font-size: 1rem;
   margin-top: 10px;
   font-family: 'Avenir', sans-serif;
+}
+
+.product-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 80px;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .product-grid-divider {
