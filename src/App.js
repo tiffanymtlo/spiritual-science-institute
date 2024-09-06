@@ -1,33 +1,12 @@
-// import React from 'react';
-// import './App.css';
-// import Header from './components/old_components/Header';
-// import HeroSection from './components/old_components/HeroSection';
-// import MainContent from './components/old_components/MainContent';
-// import Footer from './components/old_components/Footer';
-
-// function App() {
-//   return (
-//     <div class="App">
-//       <Header />
-//       <HeroSection />
-//       <MainContent />
-//       <Footer />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 import React from 'react';
-import Header from './components/Header';
-import AboutUs from './components/AboutUs';
-import Offerings from './components/Products';
-import Services from './components/Services';
-import Classes from './components/Classes';
-import Testimonials from './components/Testimonials';
-import ContactUs from './components/ContactUs';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import AboutUs from './components/AboutUs/AboutUs';
+import Offerings from './components/Products/Products';
+import Services from './components/Services/Services';
+import Classes from './components/Classes/Classes';
+import Testimonials from './components/Testimomials/Testimonials';
+import ContactUs from './components/ContactUs/ContactUs';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
