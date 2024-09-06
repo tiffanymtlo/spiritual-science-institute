@@ -3,33 +3,39 @@
   background-color: #f9f9f9;
 }
 
+.about-us h2 {
+  font-size: 3rem;
+  margin-bottom: 90px;
+}
+
 .about-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin: 50px;
+  justify-content: space-evenly;
 }
 
 .about-content img {
-  width: 200px;
-  margin-right: 30px;
+  width: 300px;
+  margin-right: 100px;
+  align-self: flex-start;
 }
 
 .text-content {
-  max-width: 600px;
+  max-width: 700px;
 }
 
-.text-content h2 {
-  font-size: 2rem;
+.text-content h3 {
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-family: 'Avenir', sans-serif;
+  margin-top: 0;
 }
 
 .text-content p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin: 20px 0;
-}
-
-.learn-more {
-  padding: 10px 20px;
-  background-color: orange;
-  border: none;
-  color: white;
-  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  font-weight: bold;
 }

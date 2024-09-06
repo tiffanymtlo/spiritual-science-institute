@@ -1,15 +1,17 @@
 import React from 'react';
+import Button from './Button';
 import './AboutUs.css';
 
 const AboutUs = () => {
   return (
     <section id="about" className="about-us">
+      <h2>About Us</h2>
       <div className="about-content">
         <img src={process.env.PUBLIC_URL + '/pallas_profile_pic.jpeg'} alt="Founder" />
         <div className="text-content">
-          <h2>Embrace Spiritual Wellness</h2>
-          <p>Welcome to the Spiritual Science Institute, a sanctuary of spiritual soothing Lorem ipsum dolor sit amet consectetur adipiscing elit est quis accumsan, semper pellentesque mus congue elementum magnis donec lacus interdum. Erat porta ultrices nulla dapibus justo, rhoncus posuere mus viverra ut parturient, quis augue hac cubilia. Magna phasellus accumsan semper platea congue facilisi justo morbi, vitae habitant urna commodo hac luctus aliquam, tortor quisque purus egestas integer mattis nunc. Hendrerit tristique accumsan potenti integer curae nam nulla quisque facilisis sociosqu pharetra sociis diam, vulputate rutrum tempus ornare donec tortor vehicula cursus sed mi vestibulum.</p>
-          <button className="learn-more">Learn More</button>
+          <h3>Embrace Spiritual Wellness</h3>
+          <p>Welcome to the Spiritual Science Institute, a sanctuary of spiritual soothing and feng shui practices in the heart of Hong Kong founded by Pallas Ng. We are dedicated to promoting harmony and balance through our services and products, designed to elevate your spiritual journey. Our clean, minimalist design is infused with positive energy and the vibrant hues of the seven chakra colors, creating a serene atmosphere for your well-being and enlightenment.</p>
+          <Button size="medium">Learn More</Button>
         </div>
       </div>
     </section>

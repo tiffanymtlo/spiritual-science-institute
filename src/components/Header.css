@@ -16,11 +16,13 @@
   margin: 0 10px;
 }
 
-.logo h1 {
+.logo h2 {
   flex: 0 0 auto;
   margin: 0;
   font-weight: 700;
   padding: 10px 0;
+  font-size: 1.5rem;
+
   /* Below is for the gradient effect of the logo */
   background: linear-gradient(45deg, #e66465, #9198e5);
   -webkit-background-clip: text;
@@ -58,19 +60,29 @@
 }
 
 .hero {
-  background-image: url('/public/chakra.jpeg');
+  background-image: url('/public/cover_img_with_overlay.webp');
   background-size: cover;
-  height: 500px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 10% 20%;
+}
+
+.hero-text {
+  z-index: 1;
+  color: white;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
   margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
 .hero-text p {
   font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
 }

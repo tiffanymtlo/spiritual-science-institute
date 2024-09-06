@@ -1,15 +1,20 @@
-.offerings {
+.products-section {
   padding: 50px;
   background-color: #eaeaea;
   text-align: center;
 }
 
-.offerings h2 {
-  font-size: 2.5rem;
+.products-header {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.products-header h2 {
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.offerings p {
+.products-header p {
   font-size: 1.2rem;
   margin-bottom: 40px;
 }
@@ -17,24 +22,41 @@
 .products {
   display: flex;
   justify-content: space-around;
+  margin-top: 40px;
 }
 
 .product {
   text-align: center;
-  max-width: 300px;
+  width: 300px;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product img {
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  height: 300px;
 }
 
 .product h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 10px;
+  font-family: 'Avenir', sans-serif;
 }
 
-.product p {
-  font-size: 1.2rem;
+.product-grid-divider {
+  margin: 20px 0;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.product-price {
   color: #777;
+}
+
+.product-button {
+  align-self: center;
 }
