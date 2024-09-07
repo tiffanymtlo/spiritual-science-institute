@@ -1,37 +1,74 @@
 .services {
   padding: 50px;
   background-color: #f5e9f7;
-  text-align: center;
+  text-align: left;
 }
 
 .services h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 40px;
 }
 
 .service-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  padding: 0 5%;
 }
 
 .service {
   text-align: center;
-  width: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .service img {
-  width: 100%;
-  height: auto;
+  width: 40%;
+  min-height: 100%;
 }
 
-.service h3 {
+.service-content {
+  padding: 20px 40px;
+  margin: auto 0;
+  text-align: left;
+}
+
+.service-content h3 {
   font-size: 1.5rem;
   margin-top: 10px;
 }
 
-.service p {
-  font-size: 1.2rem;
+.service-content h5 {
+  color: #494949;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 100;
+}
+
+.read-more-btn {
+  background-color: transparent;
+  border: none;
   color: #777;
+  cursor: pointer;
+  font-weight: 100;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  font-weight: bold;
+}
+
+.service-content p {
+  font-size: 1.2rem;
+  color: #494949;
+}
+
+.service-divider {
+  color: #CECECE;
 }

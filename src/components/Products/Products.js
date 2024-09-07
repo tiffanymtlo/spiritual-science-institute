@@ -3,8 +3,6 @@ import Button from '../Button/Button';
 import ProductGrid from './ProductGrid';
 import './Products.css';
 
-// import Product from './Product';
-// import './ProductsSection.css';
 
 const ProductsList = () => {
   // Initial product data
@@ -51,29 +49,6 @@ const Products = () => {
         <p>We have unique at-home methods that allow you to harness the power of this new energy, promote auspiciousness, and achieve balance in various aspects of your life.</p>
       </div>
       <ProductsList />
-      {/* <div className="products">
-        <div className="product">
-          <img src={process.env.PUBLIC_URL + '/iching_cards_lamp_cloth.png'} alt="Product 1" />
-          <h3>The Ultimate Set: Iching Cards</h3>
-          <hr className='product-grid-divider' />
-          <p className='product-price'>¥25</p>
-          <Button className="product-button" size="small">Buy Now</Button>
-        </div>
-        <div className="product">
-          <img src={process.env.PUBLIC_URL + '/iching_card_pic.png'} alt="Product 2" />
-          <h3>Iching Feng Shui Oracle Cards (Small)</h3>
-          <hr className='product-grid-divider' />
-          <p className='product-price'>¥85</p>
-          <Button className="product-button" size="small">Buy Now</Button>
-        </div>
-        <div className="product">
-          <img src={process.env.PUBLIC_URL + '/iching_card_pic.png'} alt="Product 3" />
-          <h3>Iching Feng Shui Oracle Cards (Large)</h3>
-          <hr className='product-grid-divider' />
-          <p className='product-price'>¥85</p>
-          <Button className="product-button" size="small">Buy Now</Button>
-        </div>
-      </div> */}
     </section>
   );
 };
