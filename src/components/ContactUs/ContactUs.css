@@ -1,15 +1,46 @@
 .contact-us {
   background-color: #f1e4ff;
-  text-align: center;
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .contact-us h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+.contact-us-divider {
+  height: 1px;
+  background: black;
+  color: black;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  font-weight: 700;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.contact-details div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contact-content p {
+  align-self: flex-end;
 }
 
 .contact-details p {
   font-size: 1.2rem;
   margin: 5px 0;
+  align-self: flex-start;
+  width: 40%;
 }
