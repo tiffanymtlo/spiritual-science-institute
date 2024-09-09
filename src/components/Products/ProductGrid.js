@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import QuickViewModal from './QuickViewModal';
 import Button from '../Button/Button';
 
-const ProductGrid = ({ name, price, imgPath, num }) => {
+const ProductGrid = ({ id, name, price, imgPath }) => {
   const [showQuickView, setShowQuickView] = useState(false);
   const [isImageHovered, setIsImageHovered] = useState(false);
 
@@ -22,7 +23,7 @@ const ProductGrid = ({ name, price, imgPath, num }) => {
       >
         <img
           src={process.env.PUBLIC_URL + imgPath}
-          alt={"Product " + num}
+          alt={"Product " + id}
           className={`product-image ${isImageHovered ? 'zoom-in' : ''}`}
           onClick={handleImageClick}
         />
@@ -36,20 +37,14 @@ const ProductGrid = ({ name, price, imgPath, num }) => {
       <Button className="product-button" size="small">Buy Now</Button>
 
       {showQuickView && (
-        <div className="quick-view-modal">
-          <div className="quick-view-content">
-            <span className="close-modal" onClick={toggleQuickView}>&times;</span>
-            <img
-              src={process.env.PUBLIC_URL + imgPath}
-              alt={"Product " + num}
-              className="modal-product-image"
-            />
-            <h3>{name}</h3>
-            <p>description</p>
-            <p className="modal-price">{price}</p>
-          </div>
-        </div>
-        )}
+        <QuickViewModal
+          id={id}
+          name={name}
+          price={price}
+          imgPath={imgPath}
+          onClose={toggleQuickView}
+        />
+      )}
     </div>
   );
 };

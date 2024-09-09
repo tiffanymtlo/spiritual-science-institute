@@ -1,7 +1,13 @@
 .header {
-  position: relative;
   text-align: center;
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  transition: top 1.4s ease; /* Smooth transition for hiding and showing */
 }
 
 .logo {
@@ -40,6 +46,14 @@
   width: 100%;
 }
 
+.header-hidden {
+  top: -500px; /* Hide navbar by moving it out of view */
+}
+
+.header-visible {
+  top: 0; /* Show navbar by moving it back into view */
+}
+
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -59,6 +73,11 @@
   color: #333;
 }
 
+.navbar a:hover {
+  color: #e66465;
+  font-weight: bold;
+}
+
 .hero {
   background-image: url('/public/cover_img_with_overlay.webp');
   background-size: cover;
@@ -68,6 +87,7 @@
   align-items: center;
   flex-direction: column;
   padding: 10% 20%;
+  margin-top: 110px; /*To prevent the header from overlapping the hero section*/
 }
 
 .hero-text {

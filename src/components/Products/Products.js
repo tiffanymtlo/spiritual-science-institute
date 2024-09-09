@@ -27,7 +27,13 @@ const ProductsList = () => {
       <div className="products">
         <div className="product-grid-container">
           {productData.slice(0, visibleProducts).map(product => (
-            <ProductGrid key={product.id} name={product.name} price={product.price} imgPath={product.imgPath} />
+            <ProductGrid
+              key={product.id}
+              id={product.id}
+              name={product.name}
+              price={product.price}
+              imgPath={product.imgPath}
+            />
           ))}
         </div>
       </div>
