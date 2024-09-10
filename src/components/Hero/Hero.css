@@ -1,0 +1,28 @@
+.hero {
+  background-image: url('/public/cover_img_with_overlay.webp');
+  background-size: cover;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 20%;
+  margin-top: 110px; /*To prevent the header from overlapping the hero section*/
+}
+
+.hero-text {
+  z-index: 1;
+  color: white;
+}
+
+.hero-text h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+}
