@@ -19,7 +19,7 @@ const AboutUs = () => {
           <img
             src={process.env.PUBLIC_URL + '/pallas_profile_pic_crop.jpeg'}
             alt="Person"
-            className="person-image"  
+            className="person-image"
           />
         </div>
         <div className="grid-item text-column">
