@@ -12,7 +12,7 @@ import AboutUsPage from './components/AboutUsPage';
 import './App.css';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('about-us');
+  const [activeTab, setActiveTab] = useState('home');
 
   return (
     <div className="App">
