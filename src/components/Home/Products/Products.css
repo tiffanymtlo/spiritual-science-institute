@@ -94,14 +94,14 @@
   font-size: 0.9rem;
 }
 
-.quick-view-banner, .product-button {
+.quick-view-banner, .product-button.display-on-hover {
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .product:hover .quick-view-banner,
-.product:hover .product-button {
+.product:hover .product-button.display-on-hover {
     opacity: 1;
     transform: translateY(0);
 }

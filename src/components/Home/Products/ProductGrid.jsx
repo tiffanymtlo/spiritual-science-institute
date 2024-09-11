@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import QuickViewModal from './QuickViewModal';
 import Button from '../../Button/Button';
 
-const ProductGrid = ({ id, name, price, imgPath }) => {
+const ProductGrid = ({ product, isDisplayOnHover = true }) => {
+  const { id, name, price, imgPath } = product;
+
   const [showQuickView, setShowQuickView] = useState(false);
   const [isImageHovered, setIsImageHovered] = useState(false);
 
@@ -34,7 +36,12 @@ const ProductGrid = ({ id, name, price, imgPath }) => {
       <h3>{name}</h3>
       <hr className='product-grid-divider' />
       <p className='product-price'>${price}</p>
-      <Button className="product-button" size="small">Buy Now</Button>
+      <Button
+        className={`product-button ${isDisplayOnHover ? 'display-on-hover' : ''}`}
+        size="small"
+      >
+        Buy Now
+      </Button>
 
       {showQuickView && (
         <QuickViewModal
