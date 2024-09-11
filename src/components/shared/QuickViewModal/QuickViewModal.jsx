@@ -1,14 +1,13 @@
 import React from 'react';
-import Button from '../../Button/Button';
+import Button from '../Button/Button';
 import './QuickViewModal.css';
 
 const QuickViewModal = ({
-  id,
-  name,
-  price,
-  imgPath,
+  product,
   onClose,
 }) => {
+  const { id, name, price, imgPath, ribbon } = product;
+
   const handleClickOutside = (e) => {
     if (e.target.className === 'quick-view-modal') {
       onClose(); // Close when clicking outside
@@ -19,7 +18,10 @@ const QuickViewModal = ({
     <div className="quick-view-modal" onClick={handleClickOutside}>
       <div className="quick-view-content">
         <span className="close-modal" onClick={onClose}>×</span>
-        <img src={process.env.PUBLIC_URL + imgPath} alt={name} />
+        <div className='quick-view-img-container'>
+          <img src={process.env.PUBLIC_URL + imgPath} alt={name} />
+          {ribbon && <div className="quick-view-ribbon">{ribbon}</div>}
+        </div>
         <div className="quick-view-texts">
           <h2 className="quick-view-header">{name}</h2>
           <p className="quick-view-price">${price}</p>

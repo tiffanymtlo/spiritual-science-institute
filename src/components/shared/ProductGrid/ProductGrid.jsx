@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import QuickViewModal from './QuickViewModal';
-import Button from '../../Button/Button';
+import QuickViewModal from '../QuickViewModal/QuickViewModal';
+import Button from '../Button/Button';
+import './ProductGrid.css';
 
 const ProductGrid = ({ product, isDisplayOnHover = true }) => {
-  const { id, name, price, imgPath } = product;
+  const { id, name, price, imgPath, ribbon } = product;
 
   const [showQuickView, setShowQuickView] = useState(false);
   const [isImageHovered, setIsImageHovered] = useState(false);
@@ -32,6 +33,7 @@ const ProductGrid = ({ product, isDisplayOnHover = true }) => {
         <div className="quick-view-banner" onClick={toggleQuickView}>
           Quick View
         </div>
+        {ribbon && <div className="product-ribbon">{ribbon}</div>}
       </div>
       <h3>{name}</h3>
       <hr className='product-grid-divider' />
@@ -45,10 +47,7 @@ const ProductGrid = ({ product, isDisplayOnHover = true }) => {
 
       {showQuickView && (
         <QuickViewModal
-          id={id}
-          name={name}
-          price={price}
-          imgPath={imgPath}
+          product={product}
           onClose={toggleQuickView}
         />
       )}

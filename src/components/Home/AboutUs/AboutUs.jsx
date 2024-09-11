@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import Button from '../../Button/Button';
+import Button from '../../shared/Button/Button';
 import './AboutUs.css';
 
 const AboutUs = () => {
