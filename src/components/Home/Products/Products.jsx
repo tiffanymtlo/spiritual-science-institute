@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 import ProductGrid from './ProductGrid';
 import './Products.css';
 

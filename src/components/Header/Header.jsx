@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -10,11 +11,9 @@ const Header = () => {
 
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
       // Scrolling down
-      console.log('scrolling down!!!');
       setIsScrollingDown(true);
     } else if (currentScrollY < lastScrollY) {
       // Scrolling up
-      console.log('scrolling up!!!');
       setIsScrollingDown(false);
     }
 
@@ -37,8 +36,15 @@ const Header = () => {
         </div>
         <nav className="navbar">
           <ul>
-            <li><a href="#home">Home</a></li>
+            {/* <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
+            <li><a href="#offerings">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li> */}
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
             <li><a href="#offerings">Products</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#classes">Classes</a></li>

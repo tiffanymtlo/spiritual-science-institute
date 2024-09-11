@@ -1,8 +1,15 @@
 import React from 'react';
-import Button from '../Button/Button';
+import { useNavigate } from "react-router-dom";
+import Button from '../../Button/Button';
 import './AboutUs.css';
 
 const AboutUs = () => {
+  const navigate = useNavigate();
+
+  const handleLearnMoreClick = () => {
+    navigate('/about');
+  };
+
   return (
     <section id="about" className="about-us">
       <h2>About Us</h2>
@@ -11,7 +18,7 @@ const AboutUs = () => {
         <div className="text-content">
           <h3>Embrace Spiritual Wellness</h3>
           <p>Welcome to the Spiritual Science Institute, a sanctuary of spiritual soothing and feng shui practices in the heart of Hong Kong founded by Pallas Ng. We are dedicated to promoting harmony and balance through our services and products, designed to elevate your spiritual journey. Our clean, minimalist design is infused with positive energy and the vibrant hues of the seven chakra colors, creating a serene atmosphere for your well-being and enlightenment.</p>
-          <Button size="medium">Learn More</Button>
+          <Button size="medium" onClick={handleLearnMoreClick}>Learn More</Button>
         </div>
       </div>
     </section>

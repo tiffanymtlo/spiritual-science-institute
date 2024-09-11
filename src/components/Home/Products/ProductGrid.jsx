@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import QuickViewModal from './QuickViewModal';
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 
 const ProductGrid = ({ id, name, price, imgPath }) => {
   const [showQuickView, setShowQuickView] = useState(false);
