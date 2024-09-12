@@ -33,7 +33,7 @@ const ProductGrid = ({ product, isDisplayOnHover = true }) => {
         onMouseLeave={() => setIsImageHovered(false)}
       >
         <img
-          src={process.env.PUBLIC_URL + imgPath}
+          src={process.env.PUBLIC_URL + imgPath[0]}
           alt={"Product " + id}
           className={`product-image ${isImageHovered ? 'zoom-in' : ''}`}
           onClick={handleImageClick}

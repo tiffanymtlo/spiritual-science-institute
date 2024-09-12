@@ -1,6 +1,16 @@
 import React from 'react';
+import Slider from 'react-slick';
 import Button from '../Button';
 import './QuickViewModal.css';
+
+const IMG_CAROUSEL_SETTINGS = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+};
 
 const QuickViewModal = ({
   product,
@@ -20,7 +30,23 @@ const QuickViewModal = ({
       <div className="quick-view-content">
         <span className="close-modal" onClick={onClose}>×</span>
         <div className='quick-view-img-container'>
-          <img src={process.env.PUBLIC_URL + imgPath} alt={name} />
+          <div className="quick-view-product-carousel">
+            {imgPath && imgPath.length > 1 ? (
+              <Slider {...IMG_CAROUSEL_SETTINGS}>
+                {imgPath.map((path, idx) => (
+                  <div key={idx}>
+                    <img
+                      src={process.env.PUBLIC_URL + path}
+                      alt={`${name} + ' image' + ${idx}`}
+                      className="carousel-image"
+                    />
+                  </div>
+                ))}
+              </Slider>
+            ) : (
+              <img src={process.env.PUBLIC_URL + imgPath[0]} alt={name} className="carousel-image" />
+            )}
+          </div>
           {ribbon && <div className="quick-view-ribbon">{ribbon}</div>}
         </div>
         <div className="quick-view-texts">

@@ -42,10 +42,30 @@
   margin: 20px 30px;
 }
 
-.quick-view-img-container img {
+.quick-view-product-carousel {
   width: 100%;
-  height: 100%;
 }
+
+.carousel-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Slick custom styles */
+.slick-prev:before, .slick-next:before {
+  color: #ff6600;
+}
+
+.slick-dots li button:before {
+  color: #494949;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6600;
+}
+/* End: Slick custom styles */
 
 .quick-view-ribbon {
   position: absolute;

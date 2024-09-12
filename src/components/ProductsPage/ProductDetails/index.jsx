@@ -1,9 +1,20 @@
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { useParams } from 'react-router-dom';
 import Button from '../../shared/Button';
 import { productData } from '../../constants';
 import './ProductDetails.css';
 
+const IMG_CAROUSEL_SETTINGS = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true
+};
 
 const ProductDetails = () => {
   const { productId } = useParams();
@@ -14,11 +25,27 @@ const ProductDetails = () => {
   return (
     <div className="product-details-container">
       <div className="product-header">
-        <img
-          className="product-image"
-          src={process.env.PUBLIC_URL + imgPath}
-          alt={name}
-        />
+        <div className="product-carousel">
+          {imgPath && imgPath.length > 1 ? (
+            <Slider {...IMG_CAROUSEL_SETTINGS}>
+              {imgPath.map((path, index) => (
+                <div key={index}>
+                  <img
+                    className="carousel-image"
+                    src={process.env.PUBLIC_URL + path}
+                    alt={name + ' image ' + index}
+                  />
+                </div>
+              ))}
+            </Slider>
+          ) : (
+            <img
+              className="product-image"
+              src={imgPath[0]}
+              alt={name}
+            />
+          )}
+        </div>
         <div className="product-info">
           <h1>{name}</h1>
           <p>${price}</p>

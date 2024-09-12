@@ -11,10 +11,30 @@
   align-items: flex-start;
 }
 
-.product-image {
+.product-carousel {
   width: 35%;
-  border: 1px solid #ddd;
 }
+
+.carousel-image, .product-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Custom slick styling */
+.slick-prev:before, .slick-next:before {
+  color: #ff6600;
+}
+
+.slick-dots li button:before {
+  color: #494949;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6600;
+}
+/* End: Custom slick styling */
 
 .product-info {
   width: 50%;

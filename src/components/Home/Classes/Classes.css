@@ -68,17 +68,6 @@
   margin: 10px 0;
 }
 
-/* .class-card button {
-  background-color: #ff5400;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  width: 40%;
-} */
-
 .class-button {
   align-self: flex-start;
 }
