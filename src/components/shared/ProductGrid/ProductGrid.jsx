@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import QuickViewModal from '../QuickViewModal/QuickViewModal';
-import Button from '../Button/Button';
+import Button from '../Button';
 import './ProductGrid.css';
 
 const ProductGrid = ({ product, isDisplayOnHover = true }) => {
@@ -9,16 +10,23 @@ const ProductGrid = ({ product, isDisplayOnHover = true }) => {
   const [showQuickView, setShowQuickView] = useState(false);
   const [isImageHovered, setIsImageHovered] = useState(false);
 
+  const navigate = useNavigate();
+
   const toggleQuickView = () => {
-      setShowQuickView(!showQuickView);
+    setShowQuickView(!showQuickView);
   };
 
-  const handleImageClick = () => {
-      toggleQuickView();
+  const handleImageClick = (e) => {
+    e.stopPropagation();
+    toggleQuickView();
+  };
+
+  const handleProductClick = (e) => {
+    navigate(`/product/${id}`);
   };
 
   return (
-    <div className="product">
+    <div className="product" onClick={handleProductClick}>
       <div
         className="product-image-container"
         onMouseEnter={() => setIsImageHovered(true)}

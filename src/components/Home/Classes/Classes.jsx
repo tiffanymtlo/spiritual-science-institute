@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../shared/Button/Button';
+import Button from '../../shared/Button';
 import './Classes.css';
 
 const ClassCard = ({ name, description, price, imagePath, dates }) => {

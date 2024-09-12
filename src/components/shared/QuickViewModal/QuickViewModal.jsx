@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button/Button';
+import Button from '../Button';
 import './QuickViewModal.css';
 
 const QuickViewModal = ({
@@ -9,6 +9,7 @@ const QuickViewModal = ({
   const { id, name, price, imgPath, ribbon } = product;
 
   const handleClickOutside = (e) => {
+    e.stopPropagation();
     if (e.target.className === 'quick-view-modal') {
       onClose(); // Close when clicking outside
     }

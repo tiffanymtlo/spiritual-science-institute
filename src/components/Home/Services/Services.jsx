@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../../shared/Button/Button';
+import Button from '../../shared/Button';
 import './Services.css';
 
 const MAX_INITIAL_DESCRIPTION_LENGTH = 200; // Number of characters to show before truncating
