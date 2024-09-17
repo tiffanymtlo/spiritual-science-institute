@@ -1,10 +1,10 @@
-.service-details-container {
+.details-view-container {
   margin: 110px auto;
   max-width: 900px;
   padding: 100px 50px;
 }
 
-.service-details {
+.details-view {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,11 +12,11 @@
   margin-bottom: 50px
 }
 
-.service-carousel {
+.details-view-carousel {
   width: 35%;
 }
 
-.carousel-image, .service-image {
+.carousel-image, .details-view-image {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -37,19 +37,19 @@
 }
 /* End: Custom slick styling */
 
-.service-info {
+.details-view-info {
   width: 50%;
   margin: 0 50px;
 }
 
-.service-info h1 {
+.details-view-info h1 {
   font-size: 1.5rem;
   /* margin: 0 10px 20px 10px; */
   margin-bottom: 20px;
   font-weight: 200;
 }
 
-.service-price {
+.details-view-price {
   display: flex;
   align-items: flex-start;
   border: 1px solid #ddd;
@@ -57,56 +57,56 @@
   width: fit-content;
 }
 
-.service-price p:nth-child(1) {
+.details-view-price p:nth-child(1) {
   border-right: 1px solid #ddd;
   margin-left: 10px;
   padding: 10px 10px 10px 5px;
 }
 
-.service-price p:last-child {
+.details-view-price p:last-child {
   margin-right: 10px;
   padding: 10px 5px 10px 10px;
 }
 
-.service-price p {
+.details-view-price p {
   font-size: 1rem;
   font-weight: 100;
   margin: 0;
 }
 
-.book-now-btn {
+.details-view-btn {
   padding: 10px 20px;
   font-size: 1rem;
   width: 100%;
 }
 
-.service-contact-details {
+.details-view-contacts {
   margin-top: 40px;
   border-top: 1px solid #ddd;
   padding: 20px;
 }
 
-.service-info-tab {
+.details-view-contact-info {
   width: 70%;
 }
 
-.service-info-tab p {
+.details-view-contact-info p {
   font-size: 1rem;
   margin: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .service-details {
+  .details-view {
     flex-direction: column;
   }
 
-  .service-image, .service-info {
+  .details-view-image, .details-view-info {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .service-info h1 {
+  .details-view-info h1 {
     font-size: 1.5rem;
   }
 }

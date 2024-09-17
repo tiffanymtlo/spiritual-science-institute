@@ -9,6 +9,7 @@ import ProductDetails from './components/ProductsPage/ProductDetails';
 import ServicesPage from './components/ServicesPage';
 import ServiceDetails from './components/ServicesPage/ServiceDetails';
 import ClassesPage from './components/ClassesPage';
+import ClassDetails from './components/ClassesPage/ClassDetails';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/services' element={<ServicesPage />} />
         <Route path='/service/:serviceId' element={<ServiceDetails />} />
         <Route path='/classes' element={<ClassesPage />} />
+        <Route path='/class/:classId' element={<ClassDetails />} />
       </Routes>
       <Footer />
     </div>

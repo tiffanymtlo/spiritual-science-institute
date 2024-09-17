@@ -2,10 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useParams } from 'react-router-dom';
 import Button from '../../shared/Button';
-import { servicesData } from '../../constants';
-import './ServiceDetails.css';
+import './DetailsViewPage.css';
 
 const IMG_CAROUSEL_SETTINGS = {
   dots: true,
@@ -16,16 +14,13 @@ const IMG_CAROUSEL_SETTINGS = {
   adaptiveHeight: true
 };
 
-const ServiceDetails = () => {
-  const { serviceId } = useParams();
-  const service = servicesData.find(
-    (service) => service.id === parseInt(serviceId));
-  const { name, description, duration, price, imgPath } = service;
+const DetailsView = ({ data, detailsViewBtnText }) => {
+  const { name, description, duration, price, imgPath } = data;
 
   return (
-    <div className="service-details-container">
-      <div className="service-details">
-        <div className="service-carousel">
+    <div className="details-view-container">
+      <div className="details-view">
+        <div className="details-view-carousel">
           {imgPath && imgPath.length > 1 ? (
             <Slider {...IMG_CAROUSEL_SETTINGS}>
               {imgPath.map((path, index) => (
@@ -40,26 +35,26 @@ const ServiceDetails = () => {
             </Slider>
           ) : (
             <img
-              className="service-image"
+              className="details-view-image"
               src={process.env.PUBLIC_URL + imgPath[0]}
               alt={name}
             />
           )}
         </div>
-        <div className="service-info">
+        <div className="details-view-info">
           <h1>{name}</h1>
-          <div className="service-price">
+          <div className="details-view-price">
             <p>{duration}</p>
             <p>${price}</p>
           </div>
           <p>{description}</p>
-          <Button className="book-now-btn" size="large">Book Now</Button>
+          <Button className="details-view-btn" size="large">{detailsViewBtnText}</Button>
         </div>
       </div>
 
-      <div className="service-contact-details">
+      <div className="details-view-contacts">
         <h3>Contact Details</h3>
-        <div className="service-info-tab">
+        <div className="details-view-contact-info">
           <p>852-9111-9111</p>
           <p>info@iching.com</p>
           <p>Hong Kong</p>
@@ -69,4 +64,4 @@ const ServiceDetails = () => {
   );
 };
 
-export default ServiceDetails;
+export default DetailsView;
