@@ -1,0 +1,113 @@
+.service-card {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 200px;
+  align-items: flex-start;
+  margin: 7% 0;
+  padding-left: 16%;;
+}
+
+.service-card.image-right .service-card-image {
+  order: 2; /* Show image on the right for even-numbered cards */
+  transform: translateX(-30%);
+}
+
+.service-card.image-left .service-card-content {
+  order: 1; /* Show image on the left for odd-numbered cards */
+  transform: translateX(-30%);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.service-card-image {
+  width: 70%;
+}
+
+.service-card-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.service-card-content {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  bottom: -10%;
+  background-color: white;
+  align-items: start;
+  width: 60%;
+  z-index: 1;
+}
+
+.service-card-content h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.service-card-content p {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #666;
+  text-align: left;
+}
+
+.service-card-divider {
+  width: 100%;
+  border-top: #D2D2D2;
+}
+
+.service-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.service-card-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.read-more {
+  background-color: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  font-weight: 100;
+  text-decoration: underline;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+  font-weight: bold;
+}
+
+
+/* Ensure proper responsiveness */
+@media screen and (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+  }
+
+  .service-card-content {
+    position: static;
+    background: white;
+  }
+
+  .service-card-image {
+    order: 1; /* Images will always be on top on smaller screens */
+  }
+}

@@ -1,3 +1,6 @@
+export const MAX_HOME_SERVICES_INITIAL_DESCRIPTION = 200; // Number of characters to show before truncating in home's service section
+export const MAX_SERVICES_PAGE_INITIAL_DESCRIPTION = 500; // Number of characters to show before truncating in services page
+
 export const productData = [
   {
     id: 1,
@@ -50,5 +53,40 @@ export const productData = [
     imgPath: ['/iching_cards_lamp_cloth.png'],
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque',
     ribbon: 'New'
+  },
+];
+
+export const servicesData = [
+  {
+    id: 1,
+    name: 'Reiki Energy Reform Healing',
+    price: '1,800',
+    duration: '60 minutes',
+    imgPath: '/energy_reform_landscape.webp',
+    description: 'Reiki is a form of alternative therapy commonly referred to as energy healing. It emerged in Japan in the late 1800s and is said to involve the transfer of universal energy from the practitioner\'s palms to their patient',
+  },
+  {
+    id: 2,
+    name: 'Feng Shui Home / Office Visit',
+    price: '15 per sq. ft',
+    duration: '60 minutes',
+    imgPath: '/fengshui.jpeg',
+    description: 'Feng shui is a practice from ancient China that reveals how to balance the energies of any given space to assure the health and good fortune for people inhabiting it',
+  },
+  {
+    id: 3,
+    name: 'Ba Zi Fate Analysis',
+    price: '2,200',
+    duration: '60 minutes',
+    imgPath: '/ba_zi.png',
+    description: 'Ba Zi is a form of Chinese Astrology that reveals the secrets of a person\'s fate and destiny. It is also known as the "Four Pillars of Destiny"',
+  },
+  {
+    id: 4,
+    name: 'Iching Cards Fortune-telling',
+    price: '980',
+    duration: '30 minutes',
+    imgPath: '/iching_cards_analysis.png',
+    description: 'Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art',
   },
 ];
