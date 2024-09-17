@@ -26,6 +26,11 @@
   transition: all 0.3s ease;
 }
 
+.service:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
 .service img {
   width: 40%;
   min-height: 100%;
@@ -71,4 +76,13 @@
 
 .service-divider {
   color: #CECECE;
+}
+
+.service-button {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.service:hover .service-button {
+  opacity: 1;
 }

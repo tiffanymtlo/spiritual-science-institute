@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../../shared/Button';
 import {
   servicesData,
@@ -11,9 +12,15 @@ const Service = ({ service }) => {
   const { id, name, price, imgPath, description } = service;
 
   const [isExpanded, setIsExpanded] = useState(false);
+  const navigate = useNavigate();
 
-  const expandReadMore = () => {
+  const expandReadMore = (e) => {
+    e.stopPropagation();
     setIsExpanded(true);
+  };
+
+  const onServiceCardClick = () => {
+    navigate(`/service/${id}`);
   };
 
   const displayDescription = () => {
@@ -31,7 +38,7 @@ const Service = ({ service }) => {
   };
 
   return (
-    <div className="service">
+    <div className="service" onClick={onServiceCardClick}>
       <img src={process.env.PUBLIC_URL + imgPath[0]} alt={"Service " + id} />
       <div className="service-content">
         <h3>{name}</h3>
