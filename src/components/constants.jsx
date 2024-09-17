@@ -62,7 +62,7 @@ export const servicesData = [
     name: 'Reiki Energy Reform Healing',
     price: '1,800',
     duration: '60 minutes',
-    imgPath: '/energy_reform_landscape.webp',
+    imgPath: ['/energy_reform_landscape.webp'],
     description: 'Reiki is a form of alternative therapy commonly referred to as energy healing. It emerged in Japan in the late 1800s and is said to involve the transfer of universal energy from the practitioner\'s palms to their patient',
   },
   {
@@ -70,7 +70,7 @@ export const servicesData = [
     name: 'Feng Shui Home / Office Visit',
     price: '15 per sq. ft',
     duration: '60 minutes',
-    imgPath: '/fengshui.jpeg',
+    imgPath: ['/fengshui.jpeg'],
     description: 'Feng shui is a practice from ancient China that reveals how to balance the energies of any given space to assure the health and good fortune for people inhabiting it',
   },
   {
@@ -78,7 +78,7 @@ export const servicesData = [
     name: 'Ba Zi Fate Analysis',
     price: '2,200',
     duration: '60 minutes',
-    imgPath: '/ba_zi.png',
+    imgPath: ['/ba_zi.png'],
     description: 'Ba Zi is a form of Chinese Astrology that reveals the secrets of a person\'s fate and destiny. It is also known as the "Four Pillars of Destiny"',
   },
   {
@@ -86,7 +86,7 @@ export const servicesData = [
     name: 'Iching Cards Fortune-telling',
     price: '980',
     duration: '30 minutes',
-    imgPath: '/iching_cards_analysis.png',
+    imgPath: ['/iching_cards_analysis.png'],
     description: 'Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art',
   },
 ];

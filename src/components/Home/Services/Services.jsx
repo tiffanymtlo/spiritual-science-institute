@@ -32,7 +32,7 @@ const Service = ({ service }) => {
 
   return (
     <div className="service">
-      <img src={process.env.PUBLIC_URL + imgPath} alt={"Service " + id} />
+      <img src={process.env.PUBLIC_URL + imgPath[0]} alt={"Service " + id} />
       <div className="service-content">
         <h3>{name}</h3>
         <h5>{displayDescription()}</h5>

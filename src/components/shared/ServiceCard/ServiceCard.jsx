@@ -9,7 +9,7 @@ const ServiceCard = ({ service }) => {
   return (
     <div className={`service-card ${index % 2 === 0 ? 'image-right' : 'image-left'}`}>
       <div className="service-card-image">
-        <img src={imgPath} alt={name} />
+        <img src={process.env.PUBLIC_URL + imgPath[0]} alt={name} />
       </div>
       <div className="service-card-content">
         <h3>{name}</h3>
@@ -23,7 +23,7 @@ const ServiceCard = ({ service }) => {
           <p>{duration}</p>
           <p>$ {price}</p>
         </div>
-        <Button className="book-now">Book Now</Button>
+        <Button className="book-now">Boook Now</Button>
       </div>
     </div>
   );

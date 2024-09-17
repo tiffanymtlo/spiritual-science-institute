@@ -5,8 +5,9 @@ import Home from './components/Home';
 import Footer from './components/Footer/Footer';
 import AboutUsPage from './components/AboutUsPage/AboutUsPage';
 import ProductsPage from './components/ProductsPage';
-import ProductDetailPage from './components/ProductsPage/ProductDetails';
+import ProductDetails from './components/ProductsPage/ProductDetails';
 import ServicesPage from './components/ServicesPage';
+import ServiceDetails from './components/ServicesPage/ServiceDetails';
 import './App.css';
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUsPage />} />
         <Route path='/products' element={<ProductsPage />} />
-        <Route path='/product/:productId' element={<ProductDetailPage />} />
+        <Route path='/product/:productId' element={<ProductDetails />} />
         <Route path='/services' element={<ServicesPage />} />
+        <Route path='/service/:serviceId' element={<ServiceDetails />} />
       </Routes>
       <Footer />
     </div>
