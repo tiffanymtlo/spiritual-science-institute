@@ -90,3 +90,42 @@ export const servicesData = [
     description: 'Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art Iching is an ancient Chinese divination text and the oldest of the Chinese classics. Possessing a history of more than two and a half millennia of commentary and interpretation, the I Ching is an influential text read throughout the world, providing inspiration to the worlds of religion, psychoanalysis, business, literature, and art',
   },
 ];
+
+export const classesData = [
+  {
+    id: 1,
+    name: 'Spiritual Communication Class (Beginner)',
+    description: 'Learn how to communicate with your pets or animals',
+    price: '¥ 1,980',
+    imagePath: 'spiritual_communication_class1.webp',
+  },
+  {
+    id: 2,
+    name: 'Iching Cards Fortune-telling Class',
+    description: 'Learn how to analyze your lives and environments with Iching Cards',
+    price: '¥ 6,280',
+    imagePath: 'Iching_card_class1.png',
+    dates: 'Nov 1-11, 2024',
+  },
+  {
+    id: 3,
+    name: 'Feng Shui Flying Stars Course',
+    description: 'Learn how to analyze the Feng Shui in your environments to enhance you',
+    price: '¥ 12,000',
+    imagePath: 'feng_shui_class.png',
+  },
+  {
+    id: 4,
+    name: 'BaZi Astrology Course (Basic)',
+    description: 'Study fate and destiny through the analysis of a person\'s birth data',
+    price: '¥ 8,400',
+    imagePath: 'ba_zi_class1.png',
+  },
+  {
+    id: 5,
+    name: 'BaZi Astrology Course (Advanced)',
+    description: 'With the basics learned, this course focuses on practicing and how to...',
+    price: '¥ 8,400',
+    imagePath: 'ba_zi_class2.webp',
+  },
+];

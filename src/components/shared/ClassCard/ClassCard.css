@@ -1,0 +1,38 @@
+.class-card {
+  width: 300px;
+  max-width: 400px;
+  background: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.class-card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.class-card h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.class-card-divider {
+  margin: 20px 0;
+  color: #CECECE;
+}
+
+.class-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.class-button {
+  align-self: flex-start;
+}
