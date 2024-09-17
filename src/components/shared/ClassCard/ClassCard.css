@@ -11,6 +11,11 @@
   transition: all 0.3s ease;
 }
 
+.class-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .class-card img {
   width: 250px;
   height: 250px;
@@ -33,6 +38,21 @@
   margin: 10px 0;
 }
 
-.class-button {
+.class-card-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-card-button {
   align-self: flex-start;
+}
+
+.class-card-button.display-on-hover {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.class-card:hover .class-card-button.display-on-hover {
+  opacity: 1;
 }

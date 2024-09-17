@@ -1,5 +1,5 @@
-import React from "react";
-import { productData } from "../constants";
+import React from 'react';
+import { productData } from '../constants';
 import Header from './Header';
 import ProductsList from './ProductsList';
 import './ProductsPage.css';

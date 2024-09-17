@@ -8,6 +8,7 @@ import ProductsPage from './components/ProductsPage';
 import ProductDetails from './components/ProductsPage/ProductDetails';
 import ServicesPage from './components/ServicesPage';
 import ServiceDetails from './components/ServicesPage/ServiceDetails';
+import ClassesPage from './components/ClassesPage';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/product/:productId' element={<ProductDetails />} />
         <Route path='/services' element={<ServicesPage />} />
         <Route path='/service/:serviceId' element={<ServiceDetails />} />
+        <Route path='/classes' element={<ClassesPage />} />
       </Routes>
       <Footer />
     </div>

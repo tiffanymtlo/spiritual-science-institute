@@ -12,8 +12,8 @@ const Classes = () => {
       </div>
       <div className="classes-container">
         <div className='classes-grid-container'>
-          {classesData.map(classData => (
-            <ClassCard key={classData.id} classData={classData} />
+          {classesData.map(classItem => (
+            <ClassCard key={classItem.id} classData={classItem} />
           ))}
         </div>
       </div>

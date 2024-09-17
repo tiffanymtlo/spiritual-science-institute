@@ -2,19 +2,34 @@ import React from 'react';
 import Button from '../Button';
 import './ClassCard.css';
 
-const ClassCard = ({ classData }) => {
-  const { name, description, price, imagePath, dates } = classData;
+const ClassCard = ({ classData, isDisplayOnHover = true }) => {
+  const {
+    name,
+    description,
+    price,
+    imagePath,
+    dates,
+    duration,
+  } = classData;
 
   return (
     <div className="class-card">
-      <img src={process.env.PUBLIC_URL + '/' + imagePath} alt={name} />
+      <img src={process.env.PUBLIC_URL + imagePath[0]} alt={name} />
       <h3>{name}</h3>
       <p>{description}</p>
       <hr className='class-card-divider' />
-      <p>{price}</p>
+      <div className='class-card-pricing'>
+        <p>{price}</p>
+        <p>{duration}</p>
+      </div>
       {dates && <hr className='class-card-divider' />}
       {dates && <p>{dates}</p>}
-      <Button className="class-button" size="small">{dates ? 'Book Now' : 'View Course'}</Button>
+      <Button
+        className={`class-card-button ${isDisplayOnHover ? 'display-on-hover' : ''}`}
+        size="small"
+      >
+        {dates ? 'Book Now' : 'View Course'}
+      </Button>
     </div>
   );
 };
