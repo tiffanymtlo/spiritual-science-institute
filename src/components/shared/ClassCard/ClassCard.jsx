@@ -7,14 +7,14 @@ const ClassCard = ({ classData, isDisplayOnHover = true }) => {
     name,
     description,
     price,
-    imagePath,
+    imgPath,
     dates,
     duration,
   } = classData;
 
   return (
     <div className="class-card">
-      <img src={process.env.PUBLIC_URL + imagePath[0]} alt={name} />
+      <img src={process.env.PUBLIC_URL + imgPath[0]} alt={name} />
       <h3>{name}</h3>
       <p>{description}</p>
       <hr className='class-card-divider' />

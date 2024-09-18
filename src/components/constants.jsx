@@ -134,3 +134,21 @@ export const classesData = [
     duration: '40 hours',
   },
 ];
+
+export const testimonialsData = [
+  {
+    id: 1,
+    text: 'I highly recommend the feng shui consultation. It brought a positive shift in my living space and energy.',
+    name: 'Jane Doe',
+  },
+  {
+    id: 2,
+    text: 'The spiritual soothing sessions have been incredibly calming and uplifting. I feel more connected to my inner self.',
+    name: 'John Smith',
+  },
+  {
+    id: 3,
+    text: 'The Spiritual Science Institute\'s approach to holistic wellness is exceptional. I have experienced profound changes in my life.',
+    name: 'Emily Chen',
+  },
+];
