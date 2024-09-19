@@ -11,6 +11,7 @@ import ServiceDetails from './components/ServicesPage/ServiceDetails';
 import ClassesPage from './components/ClassesPage';
 import ClassDetails from './components/ClassesPage/ClassDetails';
 import TestimonialsPage from './components/TestimonialsPage';
+import ContactUsPage from './components/ContactUsPage';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/classes' element={<ClassesPage />} />
         <Route path='/class/:classId' element={<ClassDetails />} />
         <Route path='/testimonials' element={<TestimonialsPage />} />
+        <Route path='/contact' element={<ContactUsPage />} />
       </Routes>
       <Footer />
     </div>
