@@ -4,6 +4,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import TextField from '@mui/material/TextField';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 import { ThemeProvider, createTheme } from "@mui/material";
 import Button from '../shared/Button';
 import './ContactUsPage.css';
@@ -42,10 +44,20 @@ const theme = createTheme({
 });
 
 const ContactUsPage = () => {
+  const [successToasterOpen, setSuccessToasterOpen] = useState(false);
+  const [errorToasterOpen, setErrorToasterOpen] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
+
+  const handleSuccessToasterClose = () => {
+    setSuccessToasterOpen(false);
+  };
+
+  const handleErrorToasterClose = () => {
+    setErrorToasterOpen(false);
+  };
 
   const onNameChange = (event) => {
     setName(event.target.value);
@@ -79,9 +91,11 @@ const ContactUsPage = () => {
       })
       .then(
         (response) => {
+          setSuccessToasterOpen(true);
           console.log("SUCCESS!", response.status, response.text);
         },
         (err) => {
+          setErrorToasterOpen(true);
           console.log('FAILED...', err);
         },
       );
@@ -97,6 +111,38 @@ const ContactUsPage = () => {
           comments or to take a different action specific to your site.
         </p>
       </div>
+      {successToasterOpen && (
+        <Snackbar
+          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+          open={true}
+          onClose={handleSuccessToasterClose}
+        >
+          <Alert
+            onClose={handleSuccessToasterClose}
+            severity="success"
+            variant="filled"
+            sx={{ width: '100%' }}
+          >
+            Your request to SpiritualScience Institute has been submitted successfully!
+          </Alert>
+        </Snackbar>
+      )}
+      {errorToasterOpen && (
+        <Snackbar
+          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+          open={true}
+          onClose={handleErrorToasterClose}
+        >
+          <Alert
+            onClose={handleErrorToasterClose}
+            severity="error"
+            variant="filled"
+            sx={{ width: '100%' }}
+          >
+            There's an error with your submission. Please try again later.
+          </Alert>
+        </Snackbar>
+      )}
       <div className="contact-us-page-content">
         <form className="contact-us-page-form">
           <div className="contact-us-page-info">
