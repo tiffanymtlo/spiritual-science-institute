@@ -10,6 +10,7 @@ import ServicesPage from './components/ServicesPage';
 import ServiceDetails from './components/ServicesPage/ServiceDetails';
 import ClassesPage from './components/ClassesPage';
 import ClassDetails from './components/ClassesPage/ClassDetails';
+import TestimonialsPage from './components/TestimonialsPage';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/service/:serviceId' element={<ServiceDetails />} />
         <Route path='/classes' element={<ClassesPage />} />
         <Route path='/class/:classId' element={<ClassDetails />} />
+        <Route path='/testimonials' element={<TestimonialsPage />} />
       </Routes>
       <Footer />
     </div>

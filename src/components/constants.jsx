@@ -151,4 +151,14 @@ export const testimonialsData = [
     text: 'The Spiritual Science Institute\'s approach to holistic wellness is exceptional. I have experienced profound changes in my life.',
     name: 'Emily Chen',
   },
+  {
+    id: 4,
+    text: 'The Spiritual Science Institute\'s approach to holistic wellness is exceptional. I have experienced profound changes in my life.',
+    name: 'Emily Chen',
+  },
+  {
+    id: 5,
+    text: 'The Spiritual Science Institute\'s approach to holistic wellness is exceptional. I have experienced profound changes in my life.',
+    name: 'Emily Chen',
+  },
 ];
