@@ -15,7 +15,7 @@ const IMG_CAROUSEL_SETTINGS = {
 };
 
 const DetailsView = ({ data, detailsViewBtnText }) => {
-  const { name, description, duration, price, imgPath } = data;
+  const { name, description, duration, price, imgPath, dates } = data;
 
   return (
     <div className="details-view-container">
@@ -47,6 +47,7 @@ const DetailsView = ({ data, detailsViewBtnText }) => {
             <p>{duration}</p>
             <p>${price}</p>
           </div>
+          {dates && <p>{dates}</p>}
           <p>{description}</p>
           <Button className="details-view-btn" size="large">{detailsViewBtnText}</Button>
         </div>
