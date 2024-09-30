@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import textsEng from '../../texts/strings_eng';
 import './Header.css';
 
 const Header = () => {
@@ -32,17 +33,17 @@ const Header = () => {
       <header className={`header ${isScrollingDown ? 'header-hidden' : 'header-visible'}`}>
         <div className="logo">
           <img src={process.env.PUBLIC_URL + '/name_card_crop.png'} alt="SpiritualScience Institute logo" />
-          <h2>SpiritualScience Institute</h2>
+          <h2>{textsEng['company.title']}</h2>
         </div>
         <nav className="navbar">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/products">Products</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/classes">Classes</Link></li>
-            <li><Link to="/testimonials">Testimonials</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/">{textsEng['header.nav.home']}</Link></li>
+            <li><Link to="/about">{textsEng['header.nav.about']}</Link></li>
+            <li><Link to="/products">{textsEng['header.nav.products']}</Link></li>
+            <li><Link to="/services">{textsEng['header.nav.services']}</Link></li>
+            <li><Link to="/classes">{textsEng['header.nav.classes']}</Link></li>
+            <li><Link to="/testimonials">{textsEng['header.nav.testimonials']}</Link></li>
+            <li><Link to="/contact">{textsEng['header.nav.contact']}</Link></li>
           </ul>
         </nav>
       </header>

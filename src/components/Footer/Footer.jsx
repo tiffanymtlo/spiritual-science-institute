@@ -1,4 +1,5 @@
 import React from 'react';
+import textsEng from '../../texts/strings_eng';
 import './Footer.css';
 
 const Footer = () => {
@@ -6,8 +7,8 @@ const Footer = () => {
     <footer className="footer">
       <img className='footer-logo' src={process.env.PUBLIC_URL + '/name_card_crop.png'} alt="footer logo" />
       <div className='footer-texts'>
-        <h3 className="footer-title">SpiritualScience Institute</h3>
-        <p className="footer-subtitle">© 2024 SpiritualScience Institute all rights reserved</p>
+        <h3 className="footer-title">{textsEng['company.title']}</h3>
+        <p className="footer-subtitle">{textsEng['footer.subtitle']}</p>
       </div>
     </footer>
   );
