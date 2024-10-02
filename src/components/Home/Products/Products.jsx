@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { productData } from '../../constants';
 import Button from '../../shared/Button';
 import ProductGrid from '../../shared/ProductGrid/ProductGrid';
+import textsEng from '../../../texts/strings_eng';
 import './Products.css';
 
 
@@ -34,9 +35,9 @@ const Products = () => {
   return (
     <section id="products" className="products-section">
       <div className="products-header">
-        <h2>Our Offerings</h2>
-        <p>Everyone possesses unique energy, and we influence one another, generating new energy which directly impacts our emotions, physical well-being and overall fortune.</p>
-        <p>We have unique at-home methods that allow you to harness the power of this new energy, promote auspiciousness, and achieve balance in various aspects of your life.</p>
+        <h2>{textsEng['home.products.title']}</h2>
+        <p>{textsEng['home.products.subtitle.first.paragraph']}</p>
+        <p>{textsEng['home.products.subtitle.second.paragraph']}</p>
       </div>
       <ProductsList />
     </section>

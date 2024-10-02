@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import Button from '../../shared/Button';
 import { productData } from '../../constants';
 import './ProductDetails.css';
+import IchingOracleCardsInfo from '../category/IchingOracleCards';
 
 const IMG_CAROUSEL_SETTINGS = {
   dots: true,
@@ -20,7 +21,7 @@ const ProductDetails = () => {
   const { productId } = useParams();
   const product = productData.find(
     (product) => product.id === parseInt(productId));
-  const { name, price, description, imgPath } = product;
+  const { name, price, description, imgPath, category } = product;
 
   return (
     <div className="product-details-container">
@@ -63,18 +64,8 @@ const ProductDetails = () => {
         <div className="product-tabs">
           <div className="tab product-info-tab">
             <h3>PRODUCT INFO</h3>
-            <p>
-              {/* TODO: ADD PRODUCT INFO HERE */}
-              {description}
-              {/* This ultimate set has everything you need to start analyzing and enhancing
-              the energy in you and your environments (including home and offices). It includes:
-              <ul>
-                <li><b>Iching Cards (Large):</b> Best for at-home use.</li>
-                <li><b>Iching Cards (Small):</b> Best for on-the-go insights.</li>
-                <li><b>Iching Cards Mat Cloth:</b> Double-sided mat for Feng Shui analysis.</li>
-                <li><b>Energy Lamp:</b> Enhances energy with Iching Cards.</li>
-              </ul> */}
-            </p>
+            {/* Product descriptions are in HTML format */}
+            {description}
           </div>
           <div className="tab">
             <h3>SHIPPING INFO</h3>
@@ -84,6 +75,7 @@ const ProductDetails = () => {
             </p>
           </div>
         </div>
+        {category && category === 'I Ching Oracle Cards' && <IchingOracleCardsInfo />}
       </div>
     </div>
   );

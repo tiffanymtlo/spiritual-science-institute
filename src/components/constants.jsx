@@ -4,55 +4,179 @@ export const MAX_SERVICES_PAGE_INITIAL_DESCRIPTION = 500; // Number of character
 export const productData = [
   {
     id: 1,
-    name: 'The Ultimate Set: Iching Cards (Large + Small) + Iching Cards Mat +Energy lamp',
-    price: 25,
-    imgPath: ['/iching_cards_lamp_cloth.png', '/iching_card_pic.png', '/iching_cards_lamp_cloth.png', '/iching_card_pic.png'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque mus. Magnis ridiculus eu morbi egestas venenatis donec cras nascetur eros, ultrices varius malesuada pretium mollis taciti cum rutrum nam, ad fermentum quisque felis aliquet lobortis montes blandit. Mi egestas scelerisque sem blandit metus nascetur in tortor, imperdiet aenean class elementum faucibus cum diam mauris, bibendum odio nibh sociis duis nisl fusce. Lectus praesent mollis consequat hac felis euismod conubia auctor scelerisque, dictum lobortis fermentum tristique vitae risus eros tempus, eu aptent sem bibendum imperdiet placerat suspendisse nullam. At himenaeos justo iaculis aenean vulputate dui, nullam orci sollicitudin habitasse pellentesque, torquent maecenas purus ornare taciti.',
+    name: 'The Ultimate Set: I Ching Oracle Cards (1 Large + 1 Small) + Energy Lamp + Playing Mat',
+    price: '1,288',
+    imgPath: ['/I Ching Cards n Gameboard.jpg', '/I Ching Cards.jpg', '/Energy Lamp.JPG'],
+    description:
+      <>
+        <p>
+          The wisdom of the I Ching outlines 64 life situations, guiding how to strategically navigate 
+          through various circumstances. Leveraging this wisdom, we have developed a unique feng shui 
+          method that enables individuals to harness the energy field and elevate their quality of life.
+        </p>
+        <p>
+          Our system empowers users to easily apply feng shui principles, cultivating a balanced and 
+          harmonious living environment. This will guide you towards a more beautiful, more abundant, 
+          and more enriching life.
+        </p>
+        <b>
+          <p>
+            This set includes:
+            <ul>
+              <li>I Ching Oracle Cards (Large) 80 x 140 mm</li>
+              <li>I Ching Oracle Cards (Small) 57 x 87 mm</li>
+              <li>Portable Energy Lamp (Rechargeable through USB Type C head)</li>
+              <li>Playing Mat 60 x 60 mm</li>
+            </ul>
+          </p>
+        </b>
+      </>,
     ribbon: 'Best Seller',
+    category: 'I Ching Oracle Cards',
   },
   {
     id: 2,
-    name: 'Iching Feng Shui Oracle Cards (Small)',
-    price: 85,
-    imgPath: ['/iching_card_pic.png'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque mus. Magnis ridiculus eu morbi egestas venenatis donec cras nascetur eros, ultrices varius malesuada pretium mollis taciti cum rutrum nam, ad fermentum quisque felis aliquet lobortis montes blandit. Mi egestas scelerisque sem blandit metus nascetur in tortor, imperdiet aenean class elementum faucibus cum diam mauris, bibendum odio nibh sociis duis nisl fusce. Lectus praesent mollis consequat hac felis euismod conubia auctor scelerisque, dictum lobortis fermentum tristique vitae risus eros tempus, eu aptent sem bibendum imperdiet placerat suspendisse nullam. At himenaeos justo iaculis aenean vulputate dui, nullam orci sollicitudin habitasse pellentesque, torquent maecenas purus ornare taciti.',
+    name: 'The Beginner Set: I Ching Oracle Cards (Large) + Energy Lamp',
+    price: 888,
+    imgPath: ['/I Ching Cards.jpg', '/Energy Lamp.JPG'],
+    description:
+      <>
+        <p>
+          The wisdom of the I Ching outlines 64 life situations, guiding how to strategically navigate 
+          through various circumstances. Leveraging this wisdom, we have developed a unique feng shui 
+          method that enables individuals to harness the energy field and elevate their quality of life.
+        </p>
+        <p>
+          Our system empowers users to easily apply feng shui principles, cultivating a balanced and 
+          harmonious living environment. This will guide you towards a more beautiful, more abundant, 
+          and more enriching life.
+        </p>
+        <b>
+          <p>
+            This set includes:
+            <ul>
+              <li>I Ching Oracle Cards (Large) 80 x 140 mm</li>
+              <li>Portable Energy Lamp (Rechargeable through USB Type C head)</li>
+            </ul>
+          </p>
+        </b>
+      </>,
+    ribbon: 'Best Seller',
+    category: 'I Ching Oracle Cards',
   },
   {
     id: 3,
-    name: 'Iching Feng Shui Oracle Cards (Large)',
-    price: 85,
-    imgPath: ['/iching_card_pic.png'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque',
-    ribbon: 'Best Seller'
+    name: 'The Essential Set: I Ching Oracle Cards (Large) + Energy Lamp + Playing Mat',
+    price: '1,088',
+    imgPath: ['/I Ching Cards n Gameboard.jpg', '/I Ching Cards.jpg', '/Energy Lamp.JPG'],
+    description:
+      <>
+        <p>
+          The wisdom of the I Ching outlines 64 life situations, guiding how to strategically navigate 
+          through various circumstances. Leveraging this wisdom, we have developed a unique feng shui 
+          method that enables individuals to harness the energy field and elevate their quality of life.
+        </p>
+        <p>
+          Our system empowers users to easily apply feng shui principles, cultivating a balanced and 
+          harmonious living environment. This will guide you towards a more beautiful, more abundant, 
+          and more enriching life.
+        </p>
+        <b>
+          <p>
+            This set includes:
+            <ul>
+              <li>I Ching Oracle Cards (Large) 80 x 140 mm</li>
+              <li>Portable Energy Lamp (Rechargeable through USB Type C head)</li>
+              <li>Playing Mat 60 x 60 mm</li>
+            </ul>
+          </p>
+        </b>
+      </>,
+    category: 'I Ching Oracle Cards',
   },
   {
     id: 4,
-    name: 'Energy lamp',
-    price: 20,
-    imgPath: ['/iching_cards_lamp_cloth.png'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque mus. Magnis ridiculus eu morbi egestas venenatis donec cras nascetur eros',
+    name: 'I Ching Oracle Cards (Large)',
+    price: 599,
+    imgPath: ['/I Ching Cards.jpg'],
+    description:
+      <>
+        <p>
+          The wisdom of the I Ching outlines 64 life situations, guiding how to strategically navigate 
+          through various circumstances. Leveraging this wisdom, we have developed a unique feng shui 
+          method that enables individuals to harness the energy field and elevate their quality of life.
+        </p>
+        <p>
+          Our system empowers users to easily apply feng shui principles, cultivating a balanced and 
+          harmonious living environment. This will guide you towards a more beautiful, more abundant, 
+          and more enriching life.
+        </p>
+        <b><li>I Ching Oracle Cards (Large) 80 x 140 mm</li></b>
+      </>,
+    category: 'I Ching Oracle Cards',
   },
   {
     id: 5,
-    name: 'Iching Cards Spreads Cloth',
-    price: 10,
-    imgPath: ['/iching_cards_lamp_cloth.png'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque',
+    name: 'I Ching Oracle Cards (Small)',
+    price: 399,
+    imgPath: ['/I Ching Cards.jpg'],
+    description:
+      <>
+        <p>
+          The wisdom of the I Ching outlines 64 life situations, guiding how to strategically navigate 
+          through various circumstances. Leveraging this wisdom, we have developed a unique feng shui 
+          method that enables individuals to harness the energy field and elevate their quality of life.
+        </p>
+        <p>
+          Our system empowers users to easily apply feng shui principles, cultivating a balanced and 
+          harmonious living environment. This will guide you towards a more beautiful, more abundant, 
+          and more enriching life.
+        </p>
+        <b><li>I Ching Oracle Cards (Small) 57 x 87 mm</li></b>
+      </>,
+    category: 'I Ching Oracle Cards',
   },
   {
     id: 6,
-    name: 'Iching Cards (Large) + Energy lamp Set',
-    price: 75,
-    imgPath: ['/iching_cards_lamp_cloth.png'],
-    desctiption: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque',
+    name: 'Energy Lamp',
+    price: 399,
+    imgPath: ['/Energy Lamp.JPG'],
+    description:
+      <>
+        <p>
+          The wisdom of the I Ching outlines 64 life situations, guiding how to strategically navigate 
+          through various circumstances. Leveraging this wisdom, we have developed a unique feng shui 
+          method that enables individuals to harness the energy field and elevate their quality of life.
+        </p>
+        <p>
+          Our system empowers users to easily apply feng shui principles, cultivating a balanced and 
+          harmonious living environment. This will guide you towards a more beautiful, more abundant, 
+          and more enriching life.
+        </p>
+        <b><li>Portable Energy Lamp (Rechargeable through USB Type C head)</li></b>
+      </>,
+    category: 'I Ching Oracle Cards',
   },
   {
     id: 7,
-    name: 'Essential Oils Energy Cards Set',
-    price: 75,
-    imgPath: ['/iching_cards_lamp_cloth.png'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus, dictum nec fermentum fringilla magna litora quisque velit, praesent mi at ac class eget enim. Scelerisque condimentum lobortis augue lacus platea integer, curabitur parturient accumsan porta posuere turpis, sem rhoncus vel mauris magna. Sapien semper sagittis integer conubia nunc gravida penatibus, ridiculus ultricies ac primis tortor placerat dapibus, a ad aliquet class scelerisque',
-    ribbon: 'New'
+    name: 'Playing Mat',
+    price: 299,
+    imgPath: ['/I Ching Cards n Gameboard.jpg'],
+    description:
+      <>
+        <p>
+          The wisdom of the I Ching outlines 64 life situations, guiding how to strategically navigate 
+          through various circumstances. Leveraging this wisdom, we have developed a unique feng shui 
+          method that enables individuals to harness the energy field and elevate their quality of life.
+        </p>
+        <p>
+          Our system empowers users to easily apply feng shui principles, cultivating a balanced and 
+          harmonious living environment. This will guide you towards a more beautiful, more abundant, 
+          and more enriching life.
+        </p>
+        <b><li>Playing Mat 60 x 60 mm</li></b>
+      </>,
+    category: 'I Ching Oracle Cards',
   },
 ];
 

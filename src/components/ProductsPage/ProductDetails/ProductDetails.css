@@ -106,10 +106,11 @@
   width: 50%;
 }
 
-.tab:nth-child(1) p {
+.tab:nth-child(1) {
   border-right: 1px solid #ddd;
   padding-right: 40px;
   padding-bottom: 20px;
+  margin: 0;
 }
 
 .tab:nth-child(1) h3 {
