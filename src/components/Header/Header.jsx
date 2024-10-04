@@ -39,7 +39,15 @@ const Header = () => {
           <ul>
             <li><Link to="/">{textsEng['header.nav.home']}</Link></li>
             <li><Link to="/about">{textsEng['header.nav.about']}</Link></li>
-            <li><Link to="/products">{textsEng['header.nav.products']}</Link></li>
+            <li className="nav-item-expandable">
+              <Link to="/products">{textsEng['header.nav.products']}</Link>
+              <div className="dropdown-content">
+                <ul>
+                  <li><Link to="/products">{textsEng['header.nav.dropdown.allProducts']}</Link></li>
+                  <li><Link to="/products/i-ching-cards-instructions">{textsEng['header.nav.dropdown.iChingCardsInstructions']}</Link></li>
+                </ul>
+              </div>
+            </li>
             <li><Link to="/services">{textsEng['header.nav.services']}</Link></li>
             <li><Link to="/classes">{textsEng['header.nav.classes']}</Link></li>
             <li><Link to="/testimonials">{textsEng['header.nav.testimonials']}</Link></li>

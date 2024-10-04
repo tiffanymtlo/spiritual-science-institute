@@ -1,4 +1,5 @@
 import React from 'react';
+import textsEng from '../../../../texts/strings_eng';
 import './Header.css';
 
 const Header = () => {
@@ -10,12 +11,8 @@ const Header = () => {
         className="header-image"
       />
       <div className="header-content">
-        <h1>All Products</h1>
-        <p>
-          This is your category description. It's a great place to tell
-          customers what this category is about, connect with your audience,
-          and draw attention to your products.
-        </p>
+        <h1>{textsEng['productsPage.header.title']}</h1>
+        <p>{textsEng['productsPage.header.subtitle']}</p>
       </div>
     </div>
   );

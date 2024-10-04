@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useParams } from 'react-router-dom';
-import Button from '../../shared/Button';
-import { productData } from '../../constants';
+import Button from '../../../shared/Button';
+import { productData } from '../../../constants';
 import './ProductDetails.css';
 import IchingOracleCardsInfo from '../category/IchingOracleCards';
 

@@ -11,7 +11,7 @@ const Classes = () => {
         <p>Wonder how to do it? Come and learn it yourselves</p>
       </div>
       <div className="classes-container">
-        <div className='classes-grid-container'>
+        <div className="classes-grid-container">
           {classesData.map(classItem => (
             <ClassCard key={classItem.id} classData={classItem} />
           ))}

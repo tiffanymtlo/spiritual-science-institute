@@ -4,14 +4,15 @@ import Header from './components/Header/Header';
 import Home from './components/Home';
 import Footer from './components/Footer/Footer';
 import AboutUsPage from './components/AboutUsPage/AboutUsPage';
-import ProductsPage from './components/ProductsPage';
-import ProductDetails from './components/ProductsPage/ProductDetails';
+import ProductsPage from './components/products/ProductsPage';
+import ProductDetails from './components/products/ProductsPage/ProductDetails';
 import ServicesPage from './components/ServicesPage';
 import ServiceDetails from './components/ServicesPage/ServiceDetails';
 import ClassesPage from './components/ClassesPage';
 import ClassDetails from './components/ClassesPage/ClassDetails';
 import TestimonialsPage from './components/TestimonialsPage';
 import ContactUsPage from './components/ContactUsPage';
+import IchingCardsInstructionsPage from './components/products/IchingCardsInstructionsPage';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/class/:classId' element={<ClassDetails />} />
         <Route path='/testimonials' element={<TestimonialsPage />} />
         <Route path='/contact' element={<ContactUsPage />} />
+        <Route path='/products/i-ching-cards-instructions' element={<IchingCardsInstructionsPage />} />
       </Routes>
       <Footer />
     </div>
