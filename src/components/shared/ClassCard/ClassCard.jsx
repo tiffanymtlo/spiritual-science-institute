@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button';
+import textsEng from '../../../texts/strings_eng';
 import './ClassCard.css';
 
 const ClassCard = ({ classData, isDisplayOnHover = true }) => {
@@ -28,7 +29,7 @@ const ClassCard = ({ classData, isDisplayOnHover = true }) => {
         className={`class-card-button ${isDisplayOnHover ? 'display-on-hover' : ''}`}
         size="small"
       >
-        {dates ? 'Book Now' : 'View Course'}
+        {dates ? textsEng['classCard.bookNow.button'] : textsEng['classCard.viewCourse.button']}
       </Button>
     </div>
   );

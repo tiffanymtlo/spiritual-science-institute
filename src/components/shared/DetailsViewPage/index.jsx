@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Button from '../../shared/Button';
+import textsEng from '../../../texts/strings_eng';
 import './DetailsViewPage.css';
 
 const IMG_CAROUSEL_SETTINGS = {
@@ -54,11 +55,11 @@ const DetailsView = ({ data, detailsViewBtnText }) => {
       </div>
 
       <div className="details-view-contacts">
-        <h3>Contact Details</h3>
+        <h3>{textsEng['detailViewPage.contactDetails.title']}</h3>
         <div className="details-view-contact-info">
-          <p>852-9111-9111</p>
-          <p>info@iching.com</p>
-          <p>Hong Kong</p>
+          <p>{textsEng['detailViewPage.contactDetails.phone']}</p>
+          <p>{textsEng['detailViewPage.contactDetails.email']}</p>
+          <p>{textsEng['detailViewPage.contactDetails.location']}</p>
         </div>
       </div>
     </div>

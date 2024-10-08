@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../Button';
 import { MAX_SERVICES_PAGE_INITIAL_DESCRIPTION } from '../../constants';
+import textsEng from '../../../texts/strings_eng';
 import './ServiceCard.css';
 
 const ServiceCard = ({ service }) => {
@@ -32,7 +33,7 @@ const ServiceCard = ({ service }) => {
           <p>{duration}</p>
           <p>$ {price}</p>
         </div>
-        <Button className="book-now">Book Now</Button>
+        <Button className="book-now">{textsEng['servicePage.serviceDetails.bookNow.button']}</Button>
       </div>
     </div>
   );

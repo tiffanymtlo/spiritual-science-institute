@@ -183,11 +183,11 @@ export const productData = [
 export const servicesData = [
   {
     id: 1,
-    name: 'Reiki Energy Reform Healing',
+    name: 'Subconscious Integration Healing',
     price: '1,800',
     duration: '60 minutes',
     imgPath: ['/energy_reform_landscape.webp'],
-    description: 'Reiki is a form of alternative therapy commonly referred to as energy healing. It emerged in Japan in the late 1800s and is said to involve the transfer of universal energy from the practitioner\'s palms to their patient',
+    description: 'Subconscious Integration Healing is a holistic approach that incorporates chakras—energy centers linked to emotions and mental states. This practice assesses chakras to identify imbalances affecting psychological and physical well-being. By connecting with the universe to clear and balance these centers, clients facilitate energy flow and release negative patterns, enhancing emotional health and aligning the subconscious with conscious intentions for a comprehensive healing experience.',
   },
   {
     id: 2,

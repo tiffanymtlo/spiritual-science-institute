@@ -6,6 +6,7 @@ import {
   MAX_HOME_SERVICES_INITIAL_DESCRIPTION,
   MAX_SERVICES_PAGE_INITIAL_DESCRIPTION,
 } from '../../constants';
+import textsEng from '../../../texts/strings_eng';
 import './Services.css';
 
 const Service = ({ service }) => {
@@ -44,10 +45,10 @@ const Service = ({ service }) => {
         <h3>{name}</h3>
         <h5>{displayDescription()}</h5>
         {description.length > MAX_HOME_SERVICES_INITIAL_DESCRIPTION && !isExpanded &&
-        <button className="read-more-btn" onClick={expandReadMore}>Read More</button>}
+        <button className="read-more-btn" onClick={expandReadMore}>{textsEng['home.services.readMore.button']}</button>}
         <hr className='service-divider' />
         <p>$ {price}</p>
-        <Button className="service-button" size="small">Book Now</Button>
+        <Button className="service-button" size="small">{textsEng['home.services.bookNow.button']}</Button>
       </div>
     </div>
   );
@@ -56,7 +57,7 @@ const Service = ({ service }) => {
 const Services = () => {
   return (
     <section id="services" className="services">
-      <h2>Services</h2>
+      <h2>{textsEng['home.services.title']}</h2>
       <div className="service-list">
         {servicesData.map(service => (
           <Service key={service.id} service={service} />
