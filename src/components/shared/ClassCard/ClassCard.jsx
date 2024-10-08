@@ -1,10 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../Button';
 import textsEng from '../../../texts/strings_eng';
 import './ClassCard.css';
 
 const ClassCard = ({ classData, isDisplayOnHover = true }) => {
   const {
+    id,
     name,
     description,
     price,
@@ -12,9 +14,14 @@ const ClassCard = ({ classData, isDisplayOnHover = true }) => {
     dates,
     duration,
   } = classData;
+  const navigate = useNavigate();
+
+  const onClassCardClick = () => {
+    navigate(`/class/${id}`);
+  };
 
   return (
-    <div className="class-card">
+    <div className="class-card" onClick={onClassCardClick}>
       <img src={process.env.PUBLIC_URL + imgPath[0]} alt={name} />
       <h3>{name}</h3>
       <p>{description}</p>
