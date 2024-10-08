@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { productData } from '../../constants';
 import Button from '../../shared/Button';
-import ProductGrid from '../../shared/ProductGrid/ProductGrid';
+import ProductGrid from '../../products/shared/ProductGrid/ProductGrid';
 import textsEng from '../../../texts/strings_eng';
 import './Products.css';
 

@@ -113,3 +113,7 @@
 .iching-card-spread-section-container img {
   max-width: 90%;
 }
+
+.iching-cards-instructions-page-next-steps a {
+  color: #ED5B20;
+}

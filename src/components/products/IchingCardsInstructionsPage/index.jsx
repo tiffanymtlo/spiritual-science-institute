@@ -218,9 +218,9 @@ const IchingCardsInstructionsPage = () => {
       <IchingCardsInstructionsHowToSection />
       <IchingCardsInstructionsCardSpreadSection />
       <div className='iching-cards-instructions-page-section'>
-        <h3>
+        <h3 className='iching-cards-instructions-page-next-steps'>
           {textsEng['products.iChingCardsInstructions.nextStepsGuide.text']}
-          <a href="">{textsEng['products.iChingCardsInstructions.nextStepsGuide.text.link']}</a>
+          <a href="/products/i-ching-cards-explanations">{textsEng['products.iChingCardsInstructions.nextStepsGuide.text.link']}</a>
         </h3>
       </div>
     </div>

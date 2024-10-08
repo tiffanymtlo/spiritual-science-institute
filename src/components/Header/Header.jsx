@@ -45,6 +45,7 @@ const Header = () => {
                 <ul>
                   <li><Link to="/products">{textsEng['header.nav.dropdown.allProducts']}</Link></li>
                   <li><Link to="/products/i-ching-cards-instructions">{textsEng['header.nav.dropdown.iChingCardsInstructions']}</Link></li>
+                  <li><Link to="/products/i-ching-cards-explanations">{textsEng['header.nav.dropdown.iChingCardsExplanations']}</Link></li>
                 </ul>
               </div>
             </li>

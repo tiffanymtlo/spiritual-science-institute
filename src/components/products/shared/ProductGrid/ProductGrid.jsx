@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import QuickViewModal from '../QuickViewModal/QuickViewModal';
-import Button from '../Button';
+import QuickViewModal from '../../../shared/QuickViewModal/QuickViewModal';
+import ProductQuickView from '../ProductQuickView';
+import Button from '../../../shared/Button';
 import './ProductGrid.css';
 
 const ProductGrid = ({ product, isDisplayOnHover = true }) => {
@@ -55,7 +56,7 @@ const ProductGrid = ({ product, isDisplayOnHover = true }) => {
 
       {showQuickView && (
         <QuickViewModal
-          product={product}
+          content={<ProductQuickView product={product} />}
           onClose={toggleQuickView}
         />
       )}

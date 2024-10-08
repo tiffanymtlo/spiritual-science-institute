@@ -13,6 +13,7 @@ import ClassDetails from './components/ClassesPage/ClassDetails';
 import TestimonialsPage from './components/TestimonialsPage';
 import ContactUsPage from './components/ContactUsPage';
 import IchingCardsInstructionsPage from './components/products/IchingCardsInstructionsPage';
+import IchingCardsExplanationPage from './components/products/IchingCardsExplanationPage';
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/testimonials' element={<TestimonialsPage />} />
         <Route path='/contact' element={<ContactUsPage />} />
         <Route path='/products/i-ching-cards-instructions' element={<IchingCardsInstructionsPage />} />
+        <Route path='/products/i-ching-cards-explanations' element={<IchingCardsExplanationPage />} />
       </Routes>
       <Footer />
     </div>
