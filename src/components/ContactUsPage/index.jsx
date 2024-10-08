@@ -8,6 +8,7 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import { ThemeProvider, createTheme } from "@mui/material";
 import Button from '../shared/Button';
+import textsEng from '../../texts/strings_eng';
 import './ContactUsPage.css';
 
 const theme = createTheme({
@@ -104,12 +105,8 @@ const ContactUsPage = () => {
   return (
     <div className="contact-us-page">
       <div className="contact-us-page-header">
-        <h1>Contact Us</h1>
-        <p>
-          This is your Contact section paragraph. 
-          Encourage your reader to reach out with any questions, 
-          comments or to take a different action specific to your site.
-        </p>
+        <h1>{textsEng['contactUsPage.header.title']}</h1>
+        <p>{textsEng['contactUsPage.header.subtitle']}</p>
       </div>
       {successToasterOpen && (
         <Snackbar
@@ -123,7 +120,7 @@ const ContactUsPage = () => {
             variant="filled"
             sx={{ width: '100%' }}
           >
-            Your request to SpiritualScience Institute has been submitted successfully!
+            {textsEng['contactUsPage.successToaster']}
           </Alert>
         </Snackbar>
       )}
@@ -139,7 +136,7 @@ const ContactUsPage = () => {
             variant="filled"
             sx={{ width: '100%' }}
           >
-            There's an error with your submission. Please try again later.
+            {textsEng['contactUsPage.errorToaster']}
           </Alert>
         </Snackbar>
       )}
@@ -149,11 +146,11 @@ const ContactUsPage = () => {
             <div>
               <WhatsAppIcon />
               <PhoneIcon />
-              <h4> +852 6802 6168</h4>
+              <h4> {textsEng['home.contactUs.phoneNumber']}</h4>
             </div>
             <div>
               <MailOutlineIcon />
-              <h4> pallasng@ichingspiritual.com</h4>
+              <h4> {textsEng['home.contactUs.email']}</h4>
             </div>
           </div>
           <div className="contact-us-page-fields-container">
@@ -161,7 +158,7 @@ const ContactUsPage = () => {
               <TextField
                 required
                 id="name-input"
-                label="Name"
+                label={textsEng['contactUsPage.form.name']}
                 type="text"
                 variant="standard"
                 color="secondary"
@@ -172,7 +169,7 @@ const ContactUsPage = () => {
               <TextField
                 required
                 id="email-input"
-                label="Email"
+                label={textsEng['contactUsPage.form.email']}
                 type="email"
                 variant="standard"
                 color="secondary"
@@ -183,11 +180,11 @@ const ContactUsPage = () => {
               <TextField
                 required
                 id="phone-number-input"
-                label="Phone Number"
+                label={textsEng['contactUsPage.form.phoneNumber']}
                 type="tel"
                 variant="standard"
                 color="secondary"
-                helperText="Please include country code if not in Hong Kong"
+                helperText={textsEng['contactUsPage.form.phoneNumber.helperText']}
                 className="contact-us-page-form-field"
                 value={phoneNumber}
                 onChange={onPhoneNumberChange}
@@ -195,7 +192,7 @@ const ContactUsPage = () => {
               <TextField
                 required
                 id="message-input"
-                label="Message"
+                label={textsEng['contactUsPage.form.message']}
                 type="multiline"
                 variant="standard"
                 color="secondary"
@@ -204,7 +201,7 @@ const ContactUsPage = () => {
                 onChange={onMessageChange}
               />
             </ThemeProvider>
-            <Button type="submit" onClick={onSubmit}>Submit</Button>
+            <Button type="submit" onClick={onSubmit}>{textsEng['contactUsPage.form.submit.button']}</Button>
           </div>
         </form>
       </div>

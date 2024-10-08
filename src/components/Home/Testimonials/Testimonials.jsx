@@ -1,4 +1,5 @@
 import React from 'react';
+import textsEng from '../../../texts/strings_eng';
 import { testimonialsData } from '../../constants';
 import './Testimonials.css';
 
@@ -18,8 +19,8 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="testimonials-header">
-        <h2>Testimonials</h2>
-        <p>The services provided by the Spiritual Science Institute have truly transformed my life. I have found inner peace and balance like never before.</p>
+        <h2>{textsEng['home.testimonials.title']}</h2>
+        <p>{textsEng['home.testimonials.subtitle']}</p>
       </div>
       <div className="testimonials-container">
         {testimonialsData.map(({ id, text, name }) => (

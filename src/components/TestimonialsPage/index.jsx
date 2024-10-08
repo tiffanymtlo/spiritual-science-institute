@@ -1,4 +1,5 @@
 import React from 'react';
+import textsEng from '../../texts/strings_eng';
 import { testimonialsData } from '../constants';
 import './TestimonialsPage.css';
 
@@ -20,8 +21,8 @@ const TestimonialsPage = () => {
   return (
     <div className="testimonials-page">
       <div className='testimonials-page-header'>
-        <h1>Testimonials</h1>
-        <h4>"Listen what the others have to say walking down this journey"</h4>
+        <h1>{textsEng['testimonialsPage.header.title']}</h1>
+        <h4>{textsEng['testimonialsPage.header.subtitle']}</h4>
       </div>
       <div className="testimonials-page-list">
         {testimonialsData.map((testimonial) => (
