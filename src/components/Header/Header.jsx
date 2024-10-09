@@ -78,7 +78,23 @@ const Header = () => {
                 </ul>
               </div>
             </li>
-            <li><Link to="/classes">{textsEng['header.nav.classes']}</Link></li>
+            <li className="nav-item-expandable">
+              <Link to="/classes">{textsEng['header.nav.classes']}</Link>
+              <div className="dropdown-content">
+                <ul>
+                  <li>
+                    <Link to="/classes">
+                      {textsEng['header.nav.dropdown.classes.allClasses']}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/classes/more-info">
+                      {textsEng['header.nav.dropdown.classes.moreInfo']}
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li><Link to="/testimonials">{textsEng['header.nav.testimonials']}</Link></li>
             <li><Link to="/contact">{textsEng['header.nav.contact']}</Link></li>
           </ul>

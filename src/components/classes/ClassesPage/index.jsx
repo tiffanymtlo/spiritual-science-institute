@@ -1,8 +1,8 @@
 import React from 'react';
-import ClassCard from '../shared/ClassCard/ClassCard';
-import { classesData } from '../constants';
+import ClassCard from '../../shared/ClassCard/ClassCard';
+import { classesData } from '../../constants';
 import './ClassesPage.css';
-import textsEng from '../../texts/strings_eng';
+import textsEng from '../../../texts/strings_eng';
 
 const ClassesPage = () => {
   return (

@@ -1,0 +1,48 @@
+.more-classes-info-page {
+  margin-top: 110px;
+  padding: 50px 0;
+  background-color: #FFFFFF;
+}
+
+.more-classes-info-page-header {
+  padding: 3%;
+  min-height: 40%;
+  text-align: center;
+}
+
+.more-classes-info-page-header h1 {
+  color: #24253A;
+  width: 70%;
+  margin: 30px auto;
+}
+
+.more-classes-info-page-header h3 {
+  color: #24253A;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.more-classes-info-page-content-container {
+  padding: 60px 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.more-classes-info-page-content {
+  text-align: center;
+}
+
+.more-classes-info-page-content hr {
+  margin: 50px auto;
+}
+
+.more-classes-info-page-section {
+  margin-top: 50px;
+}
+
+.more-classes-info-page-section h2,
+.more-classes-info-page-section h5 {
+  color: #24253A;
+  text-align: left;
+}

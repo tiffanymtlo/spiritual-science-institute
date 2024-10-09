@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { classesData } from '../constants';
-import textsEng from '../../texts/strings_eng';
-import DetailsView from '../shared/DetailsViewPage';
-import SpiritualCommunication from '../categories/SpiritualCommunication';
+import { classesData } from '../../constants';
+import textsEng from '../../../texts/strings_eng';
+import DetailsView from '../../shared/DetailsViewPage';
+import SpiritualCommunication from '../../categories/SpiritualCommunication';
 
 const ClassDetails = () => {
   const { classId } = useParams();
