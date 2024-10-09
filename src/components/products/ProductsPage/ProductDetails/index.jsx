@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import Button from '../../../shared/Button';
 import { productData } from '../../../constants';
 import './ProductDetails.css';
-import IchingOracleCardsInfo from '../category/IchingOracleCards';
+import IchingOracleCardsInfo from '../../../categories/IchingOracleCards';
 
 const IMG_CAROUSEL_SETTINGS = {
   dots: true,

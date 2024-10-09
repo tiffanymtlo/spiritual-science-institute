@@ -43,14 +43,58 @@ const Header = () => {
               <Link to="/products">{textsEng['header.nav.products']}</Link>
               <div className="dropdown-content">
                 <ul>
-                  <li><Link to="/products">{textsEng['header.nav.dropdown.allProducts']}</Link></li>
-                  <li><Link to="/products/i-ching-cards-instructions">{textsEng['header.nav.dropdown.iChingCardsInstructions']}</Link></li>
-                  <li><Link to="/products/i-ching-cards-explanations">{textsEng['header.nav.dropdown.iChingCardsExplanations']}</Link></li>
+                  <li>
+                    <Link to="/products">
+                      {textsEng['header.nav.dropdown.products.allProducts']}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/products/i-ching-cards-instructions">
+                      {textsEng['header.nav.dropdown.products.iChingCardsInstructions']}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/products/i-ching-cards-explanations">
+                      {textsEng['header.nav.dropdown.products.iChingCardsExplanations']}
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </li>
-            <li><Link to="/services">{textsEng['header.nav.services']}</Link></li>
-            <li><Link to="/classes">{textsEng['header.nav.classes']}</Link></li>
+            <li className="nav-item-expandable">
+              <Link to="/services">{textsEng['header.nav.services']}</Link>
+              <div className="dropdown-content">
+                <ul>
+                  <li>
+                    <Link to="/services">
+                      {textsEng['header.nav.dropdown.services.allServices']}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services/more-info">
+                      {textsEng['header.nav.dropdown.services.moreInfo']}
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="nav-item-expandable">
+              <Link to="/classes">{textsEng['header.nav.classes']}</Link>
+              <div className="dropdown-content">
+                <ul>
+                  <li>
+                    <Link to="/classes">
+                      {textsEng['header.nav.dropdown.classes.allClasses']}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/classes/more-info">
+                      {textsEng['header.nav.dropdown.classes.moreInfo']}
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li><Link to="/testimonials">{textsEng['header.nav.testimonials']}</Link></li>
             <li><Link to="/contact">{textsEng['header.nav.contact']}</Link></li>
           </ul>

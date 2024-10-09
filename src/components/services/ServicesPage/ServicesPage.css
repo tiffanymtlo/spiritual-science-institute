@@ -1,0 +1,29 @@
+.services-container {
+  padding: 40px;
+  margin-top: 110px;
+  background-color: #F5E9F7;
+  text-align: center;
+}
+
+.services-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  justify-items: center;
+}
+
+.service-details-view-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-details-view-container > div:last-child {
+  margin-bottom: 100px;
+}
