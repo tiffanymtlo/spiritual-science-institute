@@ -101,6 +101,7 @@ const textsEng = {
   'products.category.subconsciousIntegration.demo.header': 'Subconscious Integration Healing Demo',
   'products.category.subconsciousIntegration.demo.content': 'Curious how it is done? Take a look at the Demo below and come try communicate to your subconsciousness.',
   'products.category.singingBowls.header': 'Take a peek at how singing bowls can heal',
+  'products.category.spiritualCommunication.header': 'Hear what others have to say about Spiritual Communication',
   'products.iChingCardsExplanations.title': 'I Ching Oracle Cards Interpretation and Recommendations',
   'products.iChingCardsExplanations.subTitle': 'Check out what each card represents and how it can help you in your daily life',
   'products.iChingCardsExplanations.overview': 'Overview',

@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import { servicesData } from '../constants';
 import textsEng from '../../texts/strings_eng';
 import DetailsView from '../shared/DetailsViewPage';
-import SubconsciousIntegration from '../products/ProductsPage/category/SubconsciousIntegration';
-import SingingBowls from '../products/ProductsPage/category/SingingBowls';
+import SubconsciousIntegration from '../categories/SubconsciousIntegration';
+import SingingBowls from '../categories/SingingBowls';
 
 const ServiceDetails = () => {
   const { serviceId } = useParams();

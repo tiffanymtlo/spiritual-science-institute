@@ -228,11 +228,12 @@ export const servicesData = [
 export const classesData = [
   {
     id: 1,
-    name: 'Spiritual Communication Class (Beginner)',
-    description: 'Learn how to communicate with your pets or animals',
+    name: 'Spiritual Communication Class',
+    description: 'Learn how to communicate with your pets or animals or even human.',
     price: '1,980',
     imgPath: ['/spiritual_communication_class1.webp'],
     duration: '4 hours',
+    category: 'Spiritual Communication',
   },
   {
     id: 2,
