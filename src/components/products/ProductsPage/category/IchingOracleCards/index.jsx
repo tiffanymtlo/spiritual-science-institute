@@ -21,11 +21,12 @@ const IchingOracleCardsInfo = () => {
   return (
     <div className="iching-cards-info-section">
       <h2 className="iching-cards-info-header">{textsEng['products.category.iChingCards.header']}</h2>
-      <ReactPlayer url={process.env.PUBLIC_URL + '/I Ching 1 mins video.MP4'} controls={true} />
+      <YouTube videoId="tdYz0zbgmT8" options={options} onReady={_onReady}/>
       <p>{textsEng['products.iChingCardsInstructions.about.content.p1']}</p>
       <p>{textsEng['products.iChingCardsInstructions.about.content.p2']}</p>
       <p>{textsEng['products.iChingCardsInstructions.about.content.p3']}</p>
       <p>{textsEng['products.iChingCardsInstructions.about.content.p4']}</p>
+      <ReactPlayer url={process.env.PUBLIC_URL + '/I Ching 1 mins video.MP4'} controls={true} />
       <h2 className="iching-cards-info-header">{textsEng['products.iChingCardsInstructions.howTo.header']}</h2>
       <YouTube videoId="F8LjnvWI0vI" options={options} onReady={_onReady}/>
       <YouTube videoId="AmU1eq20SgY" options={options} onReady={_onReady}/>

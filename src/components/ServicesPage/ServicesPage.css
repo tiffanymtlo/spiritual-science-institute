@@ -17,3 +17,13 @@
   gap: 50px;
   justify-items: center;
 }
+
+.service-details-view-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-details-view-container > div:last-child {
+  margin-bottom: 100px;
+}
