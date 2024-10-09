@@ -45,6 +45,7 @@ const textsEng = {
   'products.iChingCardsInstructions.about.content.p2': 'Everyone possesses unique energy, and when we gather in shared environments, we influence one another, generating new energy. This phenomenon is known as Feng Shui energy, which directly impacts our emotions, physical well-being, career success, and overall fortune.',
   'products.iChingCardsInstructions.about.content.p3': 'Now, we introduce a unique method that utilizes the Fengshui Oracle and energy lamps, allowing you to harness the power of Feng Shui energy, promote auspiciousness, and achieve balance in various aspects of your life. The best part is, you can do it yourself without relying on others, and it is both effective and affordable.',
   'products.iChingCardsInstructions.about.content.p4': 'With our Fengshui Oracle and energy lamps, you can now easily enhance the Feng Shui energy of your living or working space, leading to an improved quality of life.',
+  'products.iChingCardsInstructions.howTo.header': 'How to use I Ching Oracle Cards',
   'products.iChingCardsInstructions.instructions.title': 'How to use I Ching Oracle Cards',
   'products.iChingCardsInstructions.instructions.content.p1': 'The Fengshui Oracle, consisting of 64 hexagrams, can be used to consult on various matters ranging from daily to within a year.',
   'products.iChingCardsInstructions.instructions.content.p2': 'Areas of divination: Feng shui energy in the home and office, relationships, work and career, wealth, inner world, study, life direction, travel, health.',

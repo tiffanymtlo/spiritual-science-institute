@@ -26,7 +26,7 @@ const IchingOracleCardsInfo = () => {
       <p>{textsEng['products.iChingCardsInstructions.about.content.p2']}</p>
       <p>{textsEng['products.iChingCardsInstructions.about.content.p3']}</p>
       <p>{textsEng['products.iChingCardsInstructions.about.content.p4']}</p>
-      <h2 className="iching-cards-info-header">How to use I Ching Oracle Cards</h2>
+      <h2 className="iching-cards-info-header">{textsEng['products.iChingCardsInstructions.howTo.header']}</h2>
       <YouTube videoId="F8LjnvWI0vI" options={options} onReady={_onReady}/>
       <YouTube videoId="AmU1eq20SgY" options={options} onReady={_onReady}/>
     </div>
