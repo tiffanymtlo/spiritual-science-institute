@@ -27,7 +27,7 @@ const ClassCard = ({ classData, isDisplayOnHover = true }) => {
       <p>{description}</p>
       <hr className='class-card-divider' />
       <div className='class-card-pricing'>
-        <p>{price}</p>
+        <p>${price}</p>
         <p>{duration}</p>
       </div>
       {dates && <hr className='class-card-divider' />}
