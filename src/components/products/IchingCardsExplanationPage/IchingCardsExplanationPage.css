@@ -69,3 +69,20 @@
 .iching-cards-explanations-page-quick-view-content h5 {
   font-weight: 400;
 }
+
+.iching-cards-explanations-page-search-bar-container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.iching-cards-explanations-page-search-bar {
+  background-color: white;
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 0.7rem;
+  border: none;
+  font-family: 'Playfair Display';
+  letter-spacing: 0.5px;
+}
