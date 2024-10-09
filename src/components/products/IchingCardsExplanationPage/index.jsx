@@ -117,7 +117,7 @@ const IchingCardsExplanationPage = () => {
             searchResult.map(card => <IchingCard key={card.id} card={card} />) :
             iChingCardsData.map(card => <IchingCard key={card.id} card={card} />)
           }
-          {(inputText < 1 || inputText > 64) &&
+          {inputText && (inputText < 1 || inputText > 64) &&
             <p className="iching-cards-explanations-page-error-message">
               {textsEng['products.iChingCardsExplanations.search.errorMessage']}
             </p>}
