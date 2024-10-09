@@ -101,6 +101,8 @@ const textsEng = {
   'products.iChingCardsExplanations.career': 'Career',
   'products.iChingCardsExplanations.wealth': 'Wealth',
   'products.iChingCardsExplanations.advice': 'Advice',
+  'products.iChingCardsExplanations.search.placeholder': 'Search for a card by card number',
+  'products.iChingCardsExplanations.search.errorMessage': 'No card found. Please enter a number between 1 and 64',
   'productsPage.productDetails.productInfo.header': 'PRODUCT INFO',
   'productsPage.productDetails.shippingInfo.header': 'SHIPPING INFO',
   'productsPage.productDetails.shippingInfo.content': 'For shipping within Hong Kong, we provide free shipping for orders over $500. For orders under $500, a shipping fee of $20 applies. Additional fees apply for international shipping. Please contact us for details.',
