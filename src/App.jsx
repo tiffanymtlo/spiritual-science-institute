@@ -6,14 +6,15 @@ import Footer from './components/Footer/Footer';
 import AboutUsPage from './components/AboutUsPage/AboutUsPage';
 import ProductsPage from './components/products/ProductsPage';
 import ProductDetails from './components/products/ProductsPage/ProductDetails';
-import ServicesPage from './components/ServicesPage';
-import ServiceDetails from './components/ServicesPage/ServiceDetails';
+import ServicesPage from './components/services/ServicesPage';
+import ServiceDetails from './components/services/ServicesPage/ServiceDetails';
 import ClassesPage from './components/ClassesPage';
 import ClassDetails from './components/ClassesPage/ClassDetails';
 import TestimonialsPage from './components/TestimonialsPage';
 import ContactUsPage from './components/ContactUsPage';
 import IchingCardsInstructionsPage from './components/products/IchingCardsInstructionsPage';
 import IchingCardsExplanationPage from './components/products/IchingCardsExplanationPage';
+import MoreServicesInfoPage from './components/services/MoreServicesInfoPage';
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='/contact' element={<ContactUsPage />} />
         <Route path='/products/i-ching-cards-instructions' element={<IchingCardsInstructionsPage />} />
         <Route path='/products/i-ching-cards-explanations' element={<IchingCardsExplanationPage />} />
+        <Route path='/services/more-info' element={<MoreServicesInfoPage />} />
       </Routes>
       <Footer />
     </div>

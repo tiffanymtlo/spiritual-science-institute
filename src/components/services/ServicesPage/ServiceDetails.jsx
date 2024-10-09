@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { servicesData } from '../constants';
-import textsEng from '../../texts/strings_eng';
-import DetailsView from '../shared/DetailsViewPage';
-import SubconsciousIntegration from '../categories/SubconsciousIntegration';
-import SingingBowls from '../categories/SingingBowls';
+import { servicesData } from '../../constants';
+import textsEng from '../../../texts/strings_eng';
+import DetailsView from '../../shared/DetailsViewPage';
+import SubconsciousIntegration from '../../categories/SubconsciousIntegration';
+import SingingBowls from '../../categories/SingingBowls';
 
 const ServiceDetails = () => {
   const { serviceId } = useParams();

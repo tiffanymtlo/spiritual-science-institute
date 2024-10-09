@@ -1,7 +1,7 @@
 import React from 'react';
-import ServiceCard from '../shared/ServiceCard/ServiceCard';
-import { servicesData } from '../constants';
-import textsEng from '../../texts/strings_eng';
+import ServiceCard from '../../shared/ServiceCard/ServiceCard';
+import { servicesData } from '../../constants';
+import textsEng from '../../../texts/strings_eng';
 import './ServicesPage.css';
 
 const Services = () => {
